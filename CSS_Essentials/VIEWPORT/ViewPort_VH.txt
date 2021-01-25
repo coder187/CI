@@ -1,0 +1,7 @@
+Viewport height
+
+Another useful and responsive unit of measurement in CSS is viewport height.
+
+The vh unit relates to the height of the full viewport. For example, 10vh will resolve to 10% of the current viewport height.
+
+Viewport height is useful if you want to constrain your application to the height of the browser viewport. You would use 100vh to do this. Another example is a sticky footer. If you add a min-height: 100vh; to the body element, then your footer will stay at the bottom of the screen even if there is insufficient content to push it down.

@@ -1,0 +1,96 @@
+<!-- Use what you've learned about CSS specificity to fix the CSS issue -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+  <body>
+      <div>
+        <p class='normal'>Normal and blue text!</p>
+        <p class='normal large brown'>Large and brown text!</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+body {
+  font-size: 12px;
+}
+.brown {
+  color: brown;
+  font-weight: 200;
+}
+.large {
+   font-size: 28px;
+}
+.normal {
+   font-size: 18px;
+   color: blue;
+   font-weight: 700;
+}
+
+
+
+Fix the CSS problem using specificity to make rules in your CSS file more specific, so that all the paragraphs are displaying the correct styles. The more selectors you use, the more specific the CSS rule becomes.
+You may not use !important (While it will fix the issue, this challenge can be sorted without using it)
+You should not rearrange the style rules
+You should not delete or change the order or add to the style rules
+You should not delete or rearrange or add to the classes within the HTML
+The challenge is to use CSS specificity only to get the text to display the way it should, and not change anything else. This means you can change the CSS selectors in the CSS file only.
+
+turn the second paragraph browb and set font to 28px
+
+
+SOLUTION:
+
+
+body {
+  font-size: 12px;
+}
+div .brown {
+  color: brown;
+  font-weight: 200;
+}
+div .large {
+   font-size: 28px;
+}
+.normal {
+   font-size: 18px;
+   color: blue;
+   font-weight: 700;
+}
+
+
+
+https://app.slack.com/client/T0L30B202/C7K19QLB1/thread/C7K19QLB1-1576849298.067000
+
+
+
+his one comes up for students a lot. So I have written a bit of extra info to help you solve it:
+The challenge is to use CSS specificity only to get your text to display the way it should, and not change anything else. This means you can change the CSS selectors in the CSS file only.
+For example this CSS below is more specific:
+div .brown {
+    color: brown;
+}
+Than this CSS :
+.brown {
+    color: brown;
+}
+So the challenge is to only add to the selectors in your CSS file. The selectors are things like div , .brown , .large etc.
+The more selectors you use, the more specific the CSS is.
+So for example if this code were in your CSS file:
+div .brown {
+    color: blue;
+}
+.brown {
+    color: brown;
+}
+A html element with a <div> parent and class="brown" on it would be coloured blue. Because even through the second CSS block is called after it, and tries to colour it brown, it is less specific than the one above. The one above uses two selectors, making it more specific. So the more specific CSS would "win" and keep the colour blue.
+
+
+
+
+
+
+

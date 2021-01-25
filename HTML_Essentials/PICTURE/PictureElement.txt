@@ -1,0 +1,17 @@
+The picture Element
+
+The <picture> element gives more flexibility to set image resources in your projects, as you can use it to set different images to be shown depending on the width of the browser viewport. By using the picture element, you can display different images to the user depending on the screen size they are viewing your webpage on. This is part of what is known as responsive design - changing how your website looks for mobile, tablet or desktop size screens.
+
+The most common use of the <picture> element would be for art direction in responsive designs. Instead of having an image that is scaled up or down based on the width of the browser window, multiple images can be designed to fit nicely into the width of the screen.
+
+The <picture> element holds two different elements: One or more <source> elements, and one <img> element.
+
+When used with the <picture> element, the <source> element needs two important attributes: srcset, which defines the URL of the image to show. And media which accepts a media query.
+
+Media queries are used in responsive design to control what can be seen on different screen sizes. A wide landscape photograph looks great on a laptop screen. However, the same size image on a phone screen would need the user to scroll sideways, and they would not be able to see the whole image all at once.
+
+For a <source> element, the media attribute value follows this syntax: media="(max-width: 600px)" this means "apply this source image when the browser viewport has a width of 600 pixels or less". So, if your screen size were more than 600px wide, the image attached to this media query would not be shown. You will learn more about media queries in the CSS module.
+
+The source element is a self-closing element; it does not need a closing tag.
+
+The <img> element is required as the last child element of the <picture> element. The <img> element is used to provide backward compatibility for browsers that do not support the <picture> element, or if none of the <source> elements media queries are active.

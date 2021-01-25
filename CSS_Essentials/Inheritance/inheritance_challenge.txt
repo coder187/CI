@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    
+    <title>CSS Inheritance</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        <div class="parent">
+            <div class="child1"></div>
+            <div class="child2"></div>
+        </div>
+  </body>
+</html>
+
+
+.parent {
+    padding: 25px;
+    margin: 30px;
+    background: lightgreen;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.child1 {
+    background: whitesmoke;
+    height: 20px;
+    padding:inherit;
+    border:inherit;
+}
+.child2 {
+    background: lightblue;
+    height: 20px;
+    margin:inherit;
+    border:inherit;
+}
+
+
+https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited

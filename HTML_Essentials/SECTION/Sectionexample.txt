@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Coders Coffeehouse grand opening</title>
+  </head>
+  <body>
+	  	
+    <!-- Add your article here -->
+    <article>
+      <header>
+        <h1>Coders Coffeehouse Grand Opening.</h1>
+        <p>
+          September 18th 2020 10am.
+      </header>
+      <section>
+        <h2>Fuel your code with the best coffee in town.</h2>
+          <p>
+            Free unlimited wifi while you enjoy our excellent range of coffees, teas and snacks.
+      </section>
+      <section>
+        <h3>First Coffee Free*</h3>
+        <p>Sept 18th 10am to 11am only.
+      </section>
+      <footer>
+        <p>
+          Coders Coffeehouse 2020.
+      </footer>
+    </article>
+
+  </body>
+</html>

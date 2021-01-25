@@ -1,0 +1,56 @@
+ful stack
+Multiple paradigms and their associated languages are used because of the particular strengths and capabilities they offer.
+
+Each paradigm also conforms to a way of building software.
+
+Declarative 
+(What) (HTML) (CSS) (SQL) & Imperative (How)
+
+Imperative
+Sequenced Instructions
+
+algorithim
+
+mutable data (changeabe)
+
+state can change
+
+variables named containers
+
+Structured Programming
+Imperative + ability to make decisions
+
+Redirect
+
+If 
+Else
+Loop
+
+Porcedural Programming
+Procedures
+Functions
+
+
+Object Oriented Programming
+Objects 
+Propertys
+Actions
+
+Classes
+
+Properties
+Behaviours
+
+Blueprints
+
+Objects are instance of a class
+
+Event Driven Programming
+Code waits for event (listening)
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+Another useful and responsive unit of measurement in CSS is the % or percentage unit.
+
+The % unit relates to the size of its parent element. For example, if a parent div is set to be 200px wide, and a child div nested inside it is set to be 50% wide, then the child div will display at 50% of its parent's width: 100px.
+
+If the parent width is changed, for example to 400px, then the child with a width of 50% will expand to become 200px wide.
+
+As you can imagine, the percentage unit of measurement is very useful for dealing with designing websites to look good on all the different screen sizes.

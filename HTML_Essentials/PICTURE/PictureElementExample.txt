@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>The picture Element</title>
+  </head>
+  <body>
+    
+	<!-- Add your picture element here -->
+ 
+	<picture>
+    <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-small.jpg" media="(max-width: 600px)">
+    </source>
+    
+    <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-portrait.jpg" media="(max-width: 800px)">
+    </source>
+    <img 
+      src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-landscape.jpg" 
+      alt="Photograph of a laptop, notepad and a mug of cappuccino coffee on a wooden desk.">
+  </picture>
+  
+
+  </body>
+</html>

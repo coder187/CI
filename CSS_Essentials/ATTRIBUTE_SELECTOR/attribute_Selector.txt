@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Attribute selectors</title>
+    <style>
+
+      input[type=password] {
+          background-color: lightgreen;
+      }
+
+      a[target=_blank]{
+          color: red;
+          font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+
+      <label for="text">Input field with type="text" attribute:</label><br/>
+      <input id="text" name="text" type="text"><br/><br/>
+
+      <!--
+      input[type=password] in the css targets only this input 
+      element and not the one above, because its type is "text" not "password"
+      -->
+      <label for="text">Input field with type="password" attribute</label><br/>
+      <input type="password"><br/><br/>
+
+      <a href="#">Link without a target attribute</a><br/><br/>
+
+      <!--
+      a[target=_blank] in the css targets only this anchor element and not 
+      the one above, because it has a target attribute set to "_blank"
+      -->
+      <a href="#" target="_blank">Link with target attribute</a>
+  </body>
+</html>

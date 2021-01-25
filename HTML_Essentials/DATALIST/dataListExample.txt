@@ -1,0 +1,20 @@
+
+<form 
+        action="https://formdump.codeinstitute.net/" 
+        method ="post">
+        
+        <label for="favorite-color">What's your favorite color?</label>
+
+        <input type="text" id="favorite-color" list="colors" name="fav-color"/>
+        <datalist id="colors">
+            <option value="Red"></option>
+            <option value="Orange"></option>
+            <option value="Yellow"></option>
+            <option value="Green"></option>
+        </datalist>
+        <input type="submit"/>
+        
+        
+
+
+          </form>

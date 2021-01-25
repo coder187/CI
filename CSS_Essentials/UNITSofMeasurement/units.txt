@@ -1,0 +1,26 @@
+Units Of Measurement
+
+CSS utilizes several different units of measurement. There are absolute units of measurement - meaning units that are fixed in relation to each other. The most commonly used absolute measurement in CSS is px which stands for pixels. Absolute measurements are most useful when working with very high-resolution devices.
+
+There are also relative units of measurement. Relative specifies a length that is relative to another object: root element, viewport, or parent. The result of the relative values depends on their relation to such objects. The result is calculated by the browser and converted into pixels. Relative units of measurement are responsive in their nature, meaning they are most useful when you need to take into account that your website will be viewed on many different screen sizes from large monitors to smartphones.
+
+In the coming units we are going to look at pixels (px), ems (em), rems (rem), percentage (%), viewport width (vw) and viewport height (vh). They are used as a value for a CSS property that accepts such units.
+
+
+A pixel is the basic unit of programmable colour on a computer display. The physical size of a pixel depends on the display screen resolution. In CSS a pixel is historically set as 1/96 inch, as screen resolution is assumed to be 96 dpi (dots per inch). However, these days many screens have much higher resolution than that. Therefore, there is not necessarily a one-to-one correspondence between a CSS and a screen pixel. The default font size for most browsers is 16px. When you want to set a fixed size that will not change or be responsive to the screen size it is displayed on, pixels are the best way to accomplish this.
+
+When using pixels to define size, we use the suffix px. For example:
+
+width: 300px;
+
+
+
+Em and Rem
+
+This lesson contains several runnable examples, be sure to scroll to the end of the page for all the content.
+
+Unlike pixels, which are a fixed unit of measurement, em and rem units are relative measurements.
+
+An em is relative to the font-size of the element (2em means two times the size of the current font). If no font-size is defined anywhere in the CSS, the em unit will be equal to the browser's default font-size for the document, which is usually 16px.
+1em = 16px
+em size = pixel size/16

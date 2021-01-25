@@ -1,0 +1,9 @@
+ 
+<form>
+  <label for="update-username">
+  Update Username
+  </label>
+  <input id="username" name="username" type="text"/>
+  <button id="update-username" name="update-username">Submit</button>
+  <button><strong>Reset</strong></button>
+</form

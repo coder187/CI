@@ -1,0 +1,37 @@
+<!-- Make all the divs the right colors using CSS -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS class selector</title>
+    
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        div {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000;
+            background-color: white;
+        }
+        .green-background{
+            background-color: green;
+        }
+          .blue-background{
+            background-color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class='green-background'></div>
+        <div class='blue-background'></div>
+        <div class='blue-background'></div>
+        <div class='green-background'></div>
+        <div class='blue-background'></div>
+        <div class='green-background'></div>
+        <div class='green-background'></div>
+    </div>
+  </body>
+</html>

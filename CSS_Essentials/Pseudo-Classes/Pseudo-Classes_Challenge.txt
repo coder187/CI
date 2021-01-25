@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pseudo-classes</title>
+    <style>
+         a:hover{
+            color: red;
+        }
+        
+        input:focus
+         {
+            background-color: green;
+        }
+        
+    </style>
+  </head>
+  
+  <body>
+    <form>
+        <p>Log In</p>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br>
+        <input type="submit"><br>
+        <div>
+            <a href="#" target="_blank">Register</a>
+        </div>
+    </form>
+  </body>
+</html>

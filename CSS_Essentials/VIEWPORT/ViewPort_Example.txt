@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>view port</title>
+    <style>
+      div {
+         background-color: blue;
+         height: 20px;
+         width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 33vw; width: 33vw;">
+    </div>
+  </body>
+</html>
+view port

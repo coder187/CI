@@ -1,0 +1,9 @@
+A form button is used primarily to submit the form data to the server. There are two types of elements that can do this
+
+An input type=submit value=Send! element will create a submit button with the text of Send! on it.
+
+A button type=submitSend!button element will do exactly the same thing.
+
+The difference between these two elements is that because a button type=submit element has a closing tag, you can put other elements inside it. Elements like spans, images or icons, for example. Whereas an input type=submit button can only hold plain text as it's value.
+
+Another type of form button attribute is the type=reset. This attribute can be applied to either an input or button element, and when clicked will reset the form to its original values when the page was first loaded.

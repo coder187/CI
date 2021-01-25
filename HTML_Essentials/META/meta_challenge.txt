@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Place your code within the space provided  -->
+    <meta charset="UTF-8"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Place your code above this comment-->
+    <title>Charset & Viewport</title>
+    <link rel='stylesheet' href="index.css">
+  </head>
+  
+  <body>
+    <section>
+        <div class="image">
+            <figure>
+              <img src="https://storage.googleapis.com/replit/images/1587045938744_a7fe3df4d15c74921698d114be266741.jpeg" alt="Jellyfish">
+              <figcaption>Jellyfish</figcaption>
+            </figure>
+        </div>
+        <div>
+            <p>When you use the &lt;meta&gt; element to define the character encoding of a website, it takes a charset attribute. The value given to the charset attribute is usually UTF-8, which is the character encoding for Unicode. Unicode is a 16-bit character set designed to cover all the world's major languages, and as such should cover most of your needs as a developer.</p>
+        </div>
+    </section>
+  </body>
+</html>

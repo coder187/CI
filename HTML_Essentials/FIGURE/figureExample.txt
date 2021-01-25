@@ -1,0 +1,4 @@
+<figure>
+  <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/jellyfish-sml.png" alt="Jellyfish">
+  <figcaption>Jellyfish</figcaption
+</figure>

@@ -1,0 +1,53 @@
+<!-- Use rem units to create three boxes of the correct height -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS rem Sizing</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        <div class="rembox1">
+            <p>80 x 80 pixels</p>
+        </div>
+        <div class="rembox2">
+            <p>160 x 160 pixels</p>
+        </div>
+        <div class="rembox3">
+            <p>320 x 320 pixels</p>
+        </div>
+    </body>
+</html>
+
+
+.rembox1 {
+    background: red;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    height:5rem;
+    width:5rem;
+}
+.rembox2 {
+    background: green;
+    border: 1px solid black;
+    margin-bottom: 20px;
+        height:10rem;
+    width:10rem;
+}
+.rembox3 {
+    background: blue;
+    border: 1px solid black;
+    margin-bottom: 20px;
+        height:20rem;
+    width:20rem;
+}
+
+p {
+    text-align: center;
+    background: white;
+    padding: 5px;
+    max-width: 70px;
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Details & Summary elements</title>
+  </head>
+  
+  <body>
+    <!-- Delete this comment and add your code here -->
+    	<details>
+    <summary>Tech Requirements</summary>
+    <p>A working laptop with internet connection is required.</p>
+    <p>A second screen comes in handy for coding along with the videos.</p>
+    
+  </details>
+
+  </body>
+</html>

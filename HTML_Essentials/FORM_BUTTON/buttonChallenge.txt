@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Form Button</title>
+  </head>
+  
+  <body>
+    <!-- Delete this comment and add your html code here -->
+     <form 
+        method="post"
+        action="https://formdump.codeinstitute.net/">
+         <label for="fname">First Name</label>
+         
+         <input type="text"
+                id="fname"
+                name="first-name">
+        <button type="submit" value="submit"><strong>Submit</strong></button>
+        <input type="reset" value="Reset form"> 
+     </form>
+  </body>
+</html>

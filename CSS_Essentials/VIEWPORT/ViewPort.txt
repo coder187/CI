@@ -1,0 +1,7 @@
+Viewport width
+
+Viewport units were introduced as a way of sizing elements relative to the browser viewport. The values are a percentage of the current browser viewport.
+
+Viewport width (vw) is a percentage of the full viewport width. This differs from the % unit in that it was relative to the containing element. If you have a phone of screen width 500px then 10vw is 50px.
+
+This unit is useful for responsive design. Take care though if using it for font sizing as on a small screen the font might be unreadable.

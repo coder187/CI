@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Aria Label</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+  
+  <body>
+    
+        <div id="menu">
+            <!-- Delete this comment and add your code here -->
+            <a href="#about" aria-label="Jump to the About section">About</a>
+            <a href="#contact" aria-label="Jump to the Contact section">Contact</a>
+            
+        </div>
+        <div id="about">
+            <h1 class="full-height">About</h1>
+        </div>
+        <div id="contact">
+            <h1 class="full-height">Contact</h1>
+        </div>
+  </body>

@@ -1,0 +1,15 @@
+The aria-label attribute
+
+ARIA stands for Accessible Rich Internet Applications and is a set of attributes that define ways to make web content and web applications more accessible to people with disabilities.
+
+To keep the design and content of a web page clean, much important detail about content often assumes the user can infer it from visual context. As a result, the use of icons for links to relevant social media platforms, or to operate interactive parts of a web page are every day. For a user who cannot see the icons, they are useless.
+
+Links with text content that do not make sense on their own also cause problems. The user is left guessing as to its purpose much of the time. Links that open in a separate tab without informing a screenreader user can be confusing too.
+
+To provide information about what your links, icons and interactive elements are for, and further detail about how they behave, the aria-label attribute can be applied to them. The value for an aria-label is a string of text that labels the purpose and behaviour of the element. For example:
+
+<a href="https://twitter.com/CodersInstitute" aria-label="Go to our twitter page (opens in new tab)" target="_blank">Twitter</a>
+
+For images, we have already talked about using the alt attribute on an <img> element, to describe the image. Without an alt attribute, a screenreader will read out the name of the image file that is being loaded, which is rarely descriptive enough.
+
+Suppose you use a background-image with css, and the image is an integral part of the information you are providing to the user. In that case, an aria-label attribute should be added to the element to describe the image. The reason for this is a background image is not applied using an img element, so there would be no alt attribute available to it in this case.
