@@ -1,0 +1,6 @@
+
+Using font-weight
+
+The weight of a font is the thickness of the character stroke relative to its height. Often the weight is referred to as light or bold. Weights can be used for both stylistic and semantic reasons.
+
+Font Weights range from 100 to 900 in steps of 100 (100, 200, 300 etc.). We can use Absolute keywords such as normal and bold, and relative keywords such as lighter and bolder. A font-weight of 400 is the same as normal, 700 is the same as bold. Not all fonts are designed with all possible font weights. In the case there is no exact match, the browser will use the nearest weight available to the one you specify.

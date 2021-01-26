@@ -1,0 +1,89 @@
+In this video, we're going to introduce you to the four main ways that color can
+be defined in CSS. These four methods are color names, hex values, HSL, RGBA.
+Color names are keywords for 140 colors that are supported by modern browsers,
+these color names are handy to use if you want a quick and easy way to apply
+common colors to your elements. CSS color names give us 140 different colors to
+choose from but this is just a tiny fraction of the
+number of actual usable colors available to us.
+Instead of using color names we can use hex codes.
+Hex codes are usually six digit values preceded with a hash symbol that
+correspond to a specific color output. These six characters are actually three
+sets of two digits. Two digits for red, two for green, and two for blue.
+The same three colors that make up each pixel
+on the screen display. In normal life we're used to a base 10
+numbering system we count up 1 2 3 4 5 6 7 8 9
+and when we get to 10 our single digit goes up to a zero
+and our tens digit goes up to a one. Hexadecimal numbering for hex colors
+is a base 16 numbering system so that means it uses
+16 single digits before going up to two digits.
+It does this by adding the letters a through f after 9.
+So in a base 16 numbering system our numbers go up like this
+1 2 3 4 5 6 7 8 9 a b c d e f
+10 11 12 13 14 15 16 17 18 19
+1a 1b 1c and so on. So 10 in hexadecimal is equal to 16
+in decimal numbering system. As you increase the value of a color in the
+display the more of that color you will see in the output.
+All the values at zero you have black,
+you add in some red and the color starts to turn red,
+you add in some blue with it and you'll start to build some magenta.
+And if you put all three values to maximum you'll get white,
+and you can move the values of each of these up and down to get pretty much
+every color you can think of.
+Now if wrapping your head around hexadecimal numbering is proving
+difficult that's okay, understanding the theory is enough and
+when you come to put colors into practice you can also use HSL or RBGA
+both of which use a base 10 numbering system the normal numbers that you're
+used to using. HSL uses three values for hue, saturation,
+and lightness. The value for hue is a number between 0 and 360
+giving you a choice of 361 colors to choose from.
+The values for saturation and lightness are percentage values.
+Saturation at zero percent is a shade of gray and at 100 is the full color.
+Lightness is also a percentage, 0 being black and 100 being white.
+RGBA does not use percentages but uses numbers from 0 to 155 for
+red, green, and blue. The a is for alpha which is to do with the
+transparency of your color, the lower the value is for alpha the
+more we can see through it. Zero is completely transparent you can't
+see the color at all, one is completely opaque meaning we can
+see only the color and nothing through it.
+So we have four different ways to color our elements in our web pages.
+Color names give us 140 colors to choose from
+such as red, old-lace, and lavender-blush. Hex codes give us the ability to set
+values for red, green, and blue hexadecimally.
+HSL gives us the ability to use a spectrum of 361 colors
+and adjust their saturation and lightness separately.
+And RGBA which gives us numerical control over each color
+and the ability to adjust opacity as well.
+
+
+
+
+Using color
+
+In CSS, we define colour as sRGB (standard red green blue), which is how we display colour in browsers, on monitors or by printers. Choosing an appropriate font colour for your website can make a big difference to your users' enjoyment. There is a large selection of 140 predetermined colours that can be picked by keyword (e.g. red, lime or chartreuse). Alternatively, you can precisely define your colour through a combination of red, green and blue.
+
+There are multiple ways in CSS to define the red, green and blue combinations. 
+
+With RGB, you define the intensity of the colour as an integer between 0 and 255. As you saw in the video, RGB also comes with an optional value for A to define the opacity of your colour, so you can use both RGB or RGBA to define your colour. 
+
+With HEX you use hexadecimal integers between 00 and FF specifying the intensity of the colour. 
+
+Another option is to use HSL (hue, saturation, lightness) where hue ranges from 0 to 360 and saturation/lightness are on a 0 to 100% scale.
+
+As a software developer, you will typically be given a colour scheme for your web app either by a graphic designer or from a corporate branding guide. However, while building your portfolio as a student, it is important to be able to choose and justify the choice of colours you use. 
+
+Colour choices evoke a psychological response from your user, and an attractive colour palet of tones that complement one another adds a great deal to the User Experience. You will find a lot of guides online as to what colour schemes are complementary - see below for some useful links.
+
+One of the most important considerations when choosing a colour for a font is whether it is readable. If there is insufficient contrast between the font and its background, then the user will have trouble reading the text, especially if the font has a lightweight. This is an accessibility issue, and websites that fail this contrast ratio is pushed down the rankings by web search companies. Again there are many online resources where you can check whether your chosen colours meet this accessibility criterion or even generate a colour choice that does meet it.
+
+
+Additional Perspectives From People We Like
+
+As this is a software development course, we do not expect you all to be artists. Here are some resources on choosing colors for your projects. Bookmark these for future reference.
+
+
+Color Wheel
+Color picker
+Color Palettes
+Color Schemes
+Is your text readable?
+

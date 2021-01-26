@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>view port</title>
+    <style>
+      div {
+         background-color: blue;
+         height: 20px;
+         width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 33vw; width: 33vw;">
+    </div>
+  </body>
+</html>
+
+
+
+
+<!-- example 2 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS vw</title>
+  <style>
+    .box {
+      width: 30vw;
+      height: 30vw;
+      background-color: #e84610;
+    }
+  </style>
+</head>
+<body>
+  <!-- This box will have a height and width of
+  30% of the window's width.
+  Try to resize the browser horizontally 
+  to see how the box adjusts to
+  the viewport. -->
+  <div class="box"></div>
+</body>
+</html>

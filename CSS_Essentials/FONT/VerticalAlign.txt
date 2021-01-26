@@ -1,0 +1,22 @@
+Using vertical-align
+
+The vertical-align CSS property sets the vertical alignment of an inline, inline-block or table-cell box. It can be used in two ways. The first is for example vertically aligning an image with respect to an adjacent piece of text. The other is vertically aligning the contents of a cell within a table.
+
+Vertical alignment can be set with a keyword, absolute or relative value.
+
+    /* Keyword values */
+vertical-align: baseline;
+vertical-align: sub;
+vertical-align: super;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: middle;
+vertical-align: top;
+vertical-align: bottom;
+
+/* length values */
+vertical-align: 5rem;
+vertical-align: 6px;
+
+/* percentage values */
+vertical-align: 30%;

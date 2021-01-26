@@ -1,0 +1,28 @@
+
+Using font-size
+
+Every device or browser will have a default font size. Additionally, some HTML elements will have a default font size. Take an h1, for example. If you as a developer wish to have a different font size, then you will have to define this in CSS with a font-size value.
+
+There are multiple ways in CSS to define font size. We can define it with a keyword or by a numeric value. Let us go through these in turn.
+
+A keyword can be absolute or relative. The default font size is medium on the absolute scale. Therefore you can choose absolute sizes from xx-small, x-small, small, medium, large, x-large, xx-large, and xxx-large to resize it. A relative keyword is relative to the parent element's font size, in a similar ratio used to separate the absolute-size keywords. Relative keywords are smaller or larger.
+
+If you want more precise control over the size you can define a length. Although you can define a length in pixels it is typically not a good idea for font size as screens with different resolutions have a vastly different viewport width in terms of pixels. Using em, rem, vw or vh is better as these alter by browser or viewport respectively. In fact, em definition is the element's default font-size and rem the root element's font size. Using % results in a percentage of the parent element's font size.
+
+One of the most important considerations when choosing a size for a font is whether it is readable. If an absolute length in pixels is used for example then the user may have trouble reading the text especially if a high resolution or large screen is used. This is an accessibility issue and websites that fail in this are pushed down the rankings by web search companies.
+
+Value	Description
+medium	Sets the font-size to a medium size. This is default
+xx-small	Sets the font-size to an xx-small size
+x-small	Sets the font-size to an extra small size
+small	Sets the font-size to a small size
+large	Sets the font-size to a large size
+x-large	Sets the font-size to an extra large size
+xx-large	Sets the font-size to an xx-large size
+xxx-large	Sets the font-size to an xxx-large size
+smaller	Sets the font-size to a smaller size than the parent element
+larger	Sets the font-size to a larger size than the parent element
+length	Sets the font-size to a fixed size in px, em, rem etc
+%	Sets the font-size to a percent of the parent element's font size
+inherit	Inherits this property from its parent element
+initial	Sets this property to its default value
