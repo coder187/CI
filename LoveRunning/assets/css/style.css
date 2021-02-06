@@ -223,3 +223,51 @@ hr{
   width:100%;
   margin: 5px 0;
 }
+
+#times{
+background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png") no-repeat;
+background-size: cover; /*cover the entire container, even if it has to stretch or cut a little bit off one of the edges*/
+background-position: center;
+width: 100%;
+overflow:hidden;
+}
+
+#times div{
+  color:#fafafa;
+  background-color: rgba(0,0,0,.6 ); /* set gray opaque background for the div */
+  
+  /* 5 panels = 20% of screen width each*/
+  /* allow 1% for spacing */
+  width:19%;
+  height:300;
+  float: left; /*get the panels to float horizontally across the page */
+
+  text-align: center;
+  padding:30px 0 0 10px; /*top right bottom left */
+
+  margin:1px;
+}
+
+#times h2{
+  color:#fafafa;
+}
+
+footer {
+  height:150px;
+}
+
+.social-networks{
+  text-align:center;
+}
+.social-networks li{
+  display: inline;
+}
+
+.social-networks i{
+  font-size: 160%;
+  margin: 1px;
+  padding: 5%;
+  color:#777777;
+}
+
+
