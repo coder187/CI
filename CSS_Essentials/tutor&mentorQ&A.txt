@@ -1,0 +1,120 @@
+MARIA - 
+
+mentors
+3 sessions per milestone project (4) = 12 sessions
+
+tutors
+24hrs mon-fri
+9-5pm weekends
+
+student care:
+non tech help
+
+slack:
+11am coffee call
+in it together
+
+
+CLAIRE LALLY
+1stmeeting
+user stories
+wireframes
+
+requirements
+tips and hints
+
+
+2nd meeting
+mid point session
+80% complete on project
+finishing touches
+most important - time to fix and redo
+
+final meeting -  end of project review
+mentor will test project.
+just before submit
+
+mentor - makes sure asessment criteria are hit.
+
+
+dont leave sessions to last minute. 
+2 weeks in advance.
+set targets.
+mini sprints
+set dates to have work completed.
+
+IGOR BASUGA
+Tutor : clarifying challenges. Help with debug.
+Build troubleshooting skills.
+
+rubber duck debug:provide as much info as possible.
+30 minute rule: use slack for 15mins for same problem resolve then use google/stackoverflow. 
+after 30 mins ask for help.
+
+24hr / mon-fri.
+9am 5pm weekends
+
+via LMS tutor support.
+
+Tutor ME.
+
+Robo Doc.
+Doc Bot.
+
+Dont skip the BOT.
+
+Tutors can help with course content (course content.) Tools.
+GITPod Hours.
+GIT.
+
+Cant help with 
+third party resources\library.
+dev env not part of the course.
+
+cant help with project planning/implementation/documentation.
+cant help with project assessment.
+
+MARIA.
+assessment handbook. ???
+
+SLACK PIER CODE REVIEW
+post project>
+prior to submit....
+
+
+Anna on SLACK howto do readme file.
+VERY Important.
+readme : .md
+give credit for images and resources used.
+beef up readme.
+give full credit and links to images/resources.
+
+show how to make a local copy of your project.
+
+give clone command.
+
+manual tests.
+screenshots of testing.
+make sure they are repeatable.
+http://bit.ly/devlabs_README_anna 
+
+
+one issue per conversation per tutoring session.
+open a new session for each issue.
+
+how to book a call with Tutors:
+tutor via text on chat system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

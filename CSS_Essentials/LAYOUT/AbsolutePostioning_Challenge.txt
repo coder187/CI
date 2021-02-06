@@ -1,0 +1,42 @@
+<!-- Position the footer at the bottom and the logo in the bottom right corner of the page -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Absolute Positioning</title>
+    <link rel='stylesheet' href='index.css'>
+  </head>
+  <body>
+      <div class="logo">
+          <span>Our Logo</span>
+      </div>
+      <header>
+          <p>A page header is a common place to put navigation menus and company logos.</p>
+      </header>
+      <section>
+          <p>Oftentimes a page will have its body divided into a header, a number of sections, and a footer. This particular section is the only one on this page, but most pages would have several sections that logically divide the page into chunks.</p>
+      </section>
+      <footer>The footer of the page sits at the very bottom</footer>
+  </body>
+</html>
+
+
+header {
+    background: lightblue;
+}
+
+section {
+    background: #ccc;
+}
+
+footer {
+    background: lightgreen;
+    position:absolute;
+    bottom:0;
+}
+
+.logo {
+    background: yellow;
+    position:absolute;
+    bottom:0;
+    right:0;
+}

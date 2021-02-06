@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Two boxes</title>
+    <style>
+      .box {
+         height: 100px;
+         width: 33%;
+         display: inline-block;
+      }
+      #one {
+         background-color: blue;
+      }
+      #two {
+         background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="one">
+    </div>
+    <div class="box" id="two">
+    </div>
+  </body>
+</html>
+Two boxes

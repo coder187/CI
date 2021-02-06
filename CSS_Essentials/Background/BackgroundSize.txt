@@ -1,0 +1,35 @@
+Using background-size
+
+The background-size property specifies the size of the background image. This seems straightforward. However, the image size can be its natural size, a stretched size or a constrained size. As a coder, you need to be careful with sizing images as a badly sized image makes a website look amateurish.
+
+Keyword values cover and contain can be used. Using cover tells the browser to ensure the whole element is filled even if it has to stretch the image in one direction and crop in another. Using contain will tell the browser to show the whole image so if it is a different aspect ratio to the element you will see empty space at the sides or bottom. You can also use auto where the browser will calculate the best size based on the actual image dimensions and aspect ratio.
+
+You can also use size unit values. If you only supply one value it will be applied to the width and the height defaults to keyword auto.
+
+Two values will set width and height in that order.
+
+In cases where you have multiple background images, you can separate the size values for each with a comma.
+
+    
+/* Keyword values */
+background-size: cover;
+background-size: contain;
+
+/* One-value syntax */
+/* Only width of image (height is 'auto') */
+background-size: 70%;
+background-size: 4rem;
+background-size: 50px;
+background-size: auto;
+
+/* Two-value syntax */
+/* first: width, second: height */
+background-size: 70% auto;
+background-size: 4rem 25%;
+background-size: auto 10px;
+background-size: auto auto;
+
+/* Multiple background images */
+background-size: auto, auto; /* Not the same as 'auto auto' */
+background-size: 70%, 20%, 25%;
+background-size: 6rem, auto, contain;

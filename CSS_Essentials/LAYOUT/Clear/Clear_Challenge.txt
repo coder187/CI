@@ -1,0 +1,52 @@
+p {
+    width: 30%;
+}
+
+.left {
+    float: left;
+    
+}
+
+.right {
+    float: right;
+}
+
+footer > p {
+    width: 100%;
+    clear: both;
+    
+}
+<!-- Use the clear CSS property to duplicate the output in the challenge requirements -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Interactions - Clear</title>
+  <link rel='stylesheet' href='index.css' type="text/css">
+</head>
+<body>
+   <div>
+      <p class="left">
+          The float property is used to position elements by pushing them either to the left or to the right of their container. The concept of floating elements is taken from the print design.
+      </p>
+      
+      
+      
+      <p class="right">
+          If you look at the newspaper, you notice that there are images pushed to either the left or right side of the text next to those images, with the text mostly wrapping the image. This is basically what a float does in CSS
+      </p>
+      
+      <footer>
+          <p>
+          The clear property is directly related to the float property. It is used to clear one or both sides of the element that follows the floated element (the one that comes after the floated element). It specifies whether an element can be placed next to the floated element. If we clear the left side of the element, then other elements cannot be placed on the left side of the element. The clear property can have three values:
+          </p>
+      </footer>
+      
+     </div>
+</body>
+</html>
+
+
+
+NOTE CHILD SELECTOR
+
+

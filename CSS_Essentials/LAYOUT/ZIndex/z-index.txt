@@ -1,0 +1,62 @@
+The purpose of the z-index property is to control the vertical stacking of overlapping elements. A higher z-index value appears to be physically closer to you. Its name comes from the cartesian coordinate system where the x-axis is horizontal, the y-axis is vertical and the z-axis is perpendicular to the screen pointing straight at you.
+
+With no z-index value set the elements stack in the same order as they appear in the HTML. The lowest in the hierarchy will appear closest to you. This also means that if element A is on top of element B, no child element of A can be higher in the stack than element B.
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Z-index</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+
+      .box1 {
+          background: green;
+          top: 0;
+          left: 0;
+
+      }
+
+      /* The z-index value for this box is set to higher
+      than the default 0 value, so it is laid on top of
+      the other boxes. Try commenting out line 21 and
+      run the code again to see the difference it makes. */
+      .box2 {
+          background: blue;
+          top: 25px;
+          left: 25px;
+          z-index: 0;
+      }
+
+      /* Try adding z-indexes of different numbers
+      to the boxes in this code to see how it changes the
+      output in the preview */
+      .box3 {
+          background: yellow;
+          top: 50px;
+          left: 50px;
+          z-index:10;
+      }
+
+      .box4 {
+          background: grey;
+          top: 75px;
+          left: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </body>
+</html>

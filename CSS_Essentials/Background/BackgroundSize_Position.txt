@@ -1,0 +1,60 @@
+Using background-position
+
+The background-position property sets the horizontal and vertical position of the image inside the container. We can use several keywords: left, right, top, bottom, and center, but their order doesn’t matter. They can be used in pairs as well but not for the same axis. This means that we can use top right or top left, but not top bottom or left right. If only one keyword is used, then the other is set to center. There is no difference between the center left and left center.
+
+The value can be a unit of measurement as well, where the first value sets the position on the X-axis, and the second value sets the position on the Y-axis.
+
+There is a three value syntax as well. The first value is a keyword left, right, top, bottom, or center. The second value is a length, whether absolute or relative and is the offset for the first value. Where the second value is also a keyword, then the third value is a length and is the offset for the second value. Only a combination of two keywords and one length is valid.
+
+A four value syntax is also possible where the first and third values are keywords, and the second and fourth are lengths. The second value is the offset for the first. The fourth value is the offset for the third.
+
+    
+/* Keyword values */
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center;
+
+/* % length values where 0 is top left */
+background-position: 20% 70%;
+
+/* absolute length values */
+background-position: 0 0;
+background-position: 1rem 2em;
+background-position: 10vh 8rem;
+
+/* Multiple images */
+background-position: 0 0, center;
+
+/* Edge offsets values */
+background-position: bottom 10px right 20px;
+background-position: right 3em bottom 10px;
+background-position: bottom 10px right;
+background-position: top right 10px;
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div {
+         background-color: blue;
+         height: 175px;
+         width: 175px;
+         background-image: url('https://dummyimage.com/70X70/0ff/000.png');
+         background-repeat: no-repeat;
+         background-position: bottom 80px right 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>

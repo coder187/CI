@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      img {
+         float: right;
+      }
+      p {
+         clear: right;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://placebear.com/g/200/200" alt="oic of a grisly">
+    <p>
+      START       fmslkmfkmskfmlsmflmslfmsmfmssfdsmfmdslkmfmdsfmdsfmsdmflsmlmsdfdsmkmskmfkdsmlfmldskmfmdslkfmldsmflmdslkfmsdfklmsdklfmlsdkmfklsdmklfmdsklml
+    </p>
+  </body>
+</html>

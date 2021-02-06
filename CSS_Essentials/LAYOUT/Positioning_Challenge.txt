@@ -1,0 +1,37 @@
+<!-- Position the small boxes within the big box -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relative Positioning</title>
+    <link rel='stylesheet' href='index.css'>
+  </head>
+  <body>
+      <div class="bigbox">
+          <div class="smallbox1"></div>
+          <div class="smallbox2"></div>
+      </div>
+  </body>
+</html>
+
+
+.bigbox {
+    width: 500px;
+    height: 250px;
+    background: cyan;
+    margin: auto;
+}
+
+.smallbox1 {
+    background: red;
+    width: 40px;
+    height: 40px;
+}
+
+.smallbox2 {
+    background: green;
+    width: 40px;
+    height: 40px;
+    position:relative;
+    left:40px;
+    bottom:40px;
+}

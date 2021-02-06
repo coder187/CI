@@ -1,0 +1,32 @@
+.box {
+	height: 80px;
+	width: 80px;
+	background: blue;
+	display: inline-block;
+}
+
+.container {
+	border: 1px solid black;
+	padding: 10px 0;
+	text-align:center;
+	
+	
+}
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Centering</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <div class="container">
+    	<div class="box"></div>
+    	<div class="box"></div>
+    	<div class="box"></div>
+    	<div class="box"></div>
+    </div>
+  </body>
+</html>

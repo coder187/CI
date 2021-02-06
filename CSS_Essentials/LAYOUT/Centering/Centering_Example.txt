@@ -1,0 +1,41 @@
+NOTE that the window must be maximised to view the effect properly.
+
+note the position relative of the parent
+and position absolute of the child
+
+note the margin of top right bottom left
+
+
+Note: The value of -70px is half the total height of 20 + 100 + 20 (padding + height + padding). 
+The value of -170px is half the total width of 20 + 300 + 20.
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      section {
+         background-color: blue;
+         height: 200px;
+         width: 60%;
+         position: relative;
+      }
+      article {
+         height: 100px;
+         width: 300px;
+         background-color: white;
+         padding: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin: -70px 0 0 -170px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+    <article>
+      This is the article. This is the article.This is the article.This is the article.This is the article.This is the article.This is the article.This is the article.This is the article.This is the article.This is the article.</article></section>
+  </body>
+</html>

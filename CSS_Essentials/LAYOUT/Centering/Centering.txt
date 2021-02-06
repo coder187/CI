@@ -1,0 +1,19 @@
+Using centering
+
+Centring content with CSS is a core required skill if you want to become front end developer. Some content is easier to centre, while some require more thinking and CSS knowledge. It is one of the trickiest aspects of CSS so we will break it down into smaller parts starting with horizontal centring
+
+If we recall the text-align lessons, we covered the center keyword for centring text. Notice the spelling of center for your code. This can also be used for centring inline or inline-block elements within a block parent element. This, for example, could be used to centre anchor elements within a nav element.
+
+If we recall the margin lessons we learned that you can centre a block-level element with a set width by giving a margin-left and margin-right of auto. So a div of width 200px can be centred within its parent div with margin: 0 auto;
+
+However, if you have multiple block-level elements that you wish to centre horizontally in a row then you are best to change their display type. If you have multiple div elements for example you can change the display type to inline-block then use the text-align property with keyword center.
+
+That covers horizontal centring but what if you want to centre vertically? This is trickier
+
+If you are trying to vertically centre a single line of text for example then one option is to add equal padding to the top and bottom. Another option is to give equal value height and line-height to the element containing the line of text.
+
+If you have multiple lines of text then the equal top and bottom padding is still an option. This was also covered in the Font Position lesson where you were introduced to the vertical-align property with the keyword middle which was used to vertically align text in a table cell. Using table elements for aligning text vertically is restrictive. You can use the display property to make other elements behave in a more tabulated way with the table and table-cell keywords. A div with display: table; containing a paragraph with display: table-cell; can have it's text vertically centred with vertical-align: middle; CSS. This will only work if the parent element has a fixed height value.
+
+Block-level elements require a different approach to vertical centring. This requires recalling the properties from the Positioning lessons. If the height of the element you are centring is known, then you can use the absolute keyword to vertically centre a block-level element within a parent element of position value relative.
+
+To centre both horizontally and vertically then you would use a combination of the techniques above. If you have an element of a fixed width and height then absolute positioning of 50% combined with negative margin values of half the width and height will centre the element. How would you centre a child div with height 200px and width 100px within a parent div? First, you give the parent a position property of keyword relative and the child a position property of keyword absolute. Then give the child a top and a left property of value 50%. Then add a margin property of value -50px 0 0 -100px. Now the child div is centred within the parent div.

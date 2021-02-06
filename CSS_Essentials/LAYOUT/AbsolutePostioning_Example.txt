@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Two boxes</title>
+    <style>
+      .box {
+         height: 50px;
+         width: 50px;
+      }
+      #one {
+         background-color: blue;
+         position : absolute;
+      }
+      #two {
+         background-color: orange;
+         position : absolute;
+         top: 50px;
+         left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="one">
+    </div>
+    <div class="box" id="two">
+    </div>
+  </body>
+</html>

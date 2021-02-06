@@ -1,0 +1,24 @@
+What happens if we set the height for the element, but its content is longer than the value of that height? In other words, what happens when the content is bigger than the container?
+
+We can fix this problem with the overflow property. The overflow property controls the content that falls out of the boundaries of the container.
+
+If we set the value to auto, a scrollbar will be shown only if it is needed. In other words, it will show up if the content is larger than the container. In the example in the first paragraph, a vertical scrollbar will be added on the right side of the container.
+
+On the other hand, the value of scroll will add the scrollbar whether it is needed or not, both horizontally and vertically.
+
+Sometimes we want to clip out the content that is hanging out of the container. We want to hide it. If this is the case, then we need to set the value of the overflow property to hidden. This can be useful when dealing with dynamically generated content where an overflow will cause major layout issues. The downside is of course, is that the content that has overflowed is no longer accessible by a user.
+
+But what if we want the content to be shown? If we don't mind that content is breaking out of the container? Then we should use the visible property. This is the default value, so there is no need generally to specify it unless you are overriding another value. If content does overflow, then it does not affect the flow of the page. Therefore it is generally a bad idea to give a static height to any element containing text.
+
+CSS allows us to control the vertical or horizontal scrollbar with two properties.
+
+overflow-x controls the horizontal scrollbar
+overflow-y controls the vertical scrollbar
+overflow-z and overflow-y have the same values as the overflow property
+auto
+scroll
+visible
+hidden
+These values add the same behaviour as for the overflow property.
+
+From a user experience standpoint, it is often best to avoid scrolling, particularly in the x-direction. It is distracting for a user to have to scroll to read a piece of text or view an image. However, scrolling can be used for stylistic reasons. Many websites use infinite or long scrolling. If you do use this, then it is wise to implement sticky navigation, so the user does not have to scroll up to the top. Also, it is a good idea to give the user a visual cue that the site should be scrolled. This can be as simple as a down arrow icon.

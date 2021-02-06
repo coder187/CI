@@ -1,0 +1,38 @@
+The padding property defines the innermost portion of the box model. It creates space around the content.
+
+Padding is shorthand for the padding-top, padding-right, padding-bottom and padding-left so can accept up to four values. If you only wanted to alter the padding on the right, for example, you would use the padding-right property.
+
+If you give the padding property only one value, then that value of padding will be applied to all four sides of the content.
+
+If you give it two values, then they will be repeated, so the first value applies to the top and bottom and the second to left and right.
+
+If three values are specified, then the first applies to the top, the second to the right and left, the third to the bottom.
+
+All four values are applied clockwise from top to right to the bottom to left. The values can be absolute or relative so px, em, rem and % are allowed.
+
+Adding padding will increase the size of the element so you need to take this into account with respect to your layout. Take a look at the table to below to see some examples.
+
+padding examples
+Value	Example
+padding: 10px;	
+This text is a placeholder, the space it takes up represents the content part of the box model. The gaps you see between the edges of the text and the edges of the table cell are the padding that was applied to it.
+padding: 5px 30px;	
+This text is a placeholder, the space it takes up represents the content part of the box model. The gaps you see between the edges of the text and the edges of the table cell are the padding that was applied to it.
+padding: 30px 10px 20px;	
+This text is a placeholder, the space it takes up represents the content part of the box model. The gaps you see between the edges of the text and the edges of the table cell are the padding that was applied to it.
+padding: 0 10px 20px 40px;	
+This text is a placeholder, the space it takes up represents the content part of the box model. The gaps you see between the edges of the text and the edges of the table cell are the padding that was applied to it.
+padding: <padding-top> || <padding-right> || <padding-bottom> || <padding-left>
+
+/* shorthand padding*/
+.box {
+  padding: 20px;
+}
+
+/* The same padding written longhand */
+.box {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}

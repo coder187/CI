@@ -1,0 +1,15 @@
+Using margin
+
+The margin property defines the outermost portion of the box model. It creates space around the element.
+
+Coding the margin property works just like coding for the other box model properties. margin is shorthand for the margin-top, margin-right, margin-bottom and margin-left so can accept up to four values. If you only wanted to alter the margin on the right, for example, you would use the margin-right property.
+
+If you give the margin property only one value, then that value of margin will be applied to all four sides of the content.
+
+If you give it two values, then they will be repeated, so the first value applies to the top and bottom and the second to left and right.
+
+If three values are specified, then the first applies to the top, the second to the right and left, the third to the bottom.
+
+All four values are applied clockwise from top to right to the bottom to left. The values can be absolute or relative so px, em, rem and % are allowed.
+
+Adding margin will increase the size of the element so you need to take this into account with respect to your layout. Take a look at the table to below to see some examples.

@@ -1,0 +1,33 @@
+The clear property
+ Bookmark this page
+WHAT IS IT?
+
+A layout property.
+
+ 
+WHAT DOES IT DO?
+
+Determines whether neighbouring elements can sit adjacent to a floated element
+
+ 
+HOW DO YOU USE IT?
+
+This property is fundamental to the layout alignment of floated content.
+
+
+
+Using Clear
+
+The clear property is handy when you have created a layout with floats. When we apply floats to elements, the elements that come after will have their own position properties affected by default.
+
+Suppose you have an article floated to the left and an aside floated to the right. If the aside had less text content than the article, then the following element might sit beneath the aside but adjacent to the article.
+
+To avoid this and have the following element take the full viewport width, then you will have to use clear to reset the position of the proceeding elements into the right place.
+
+The clear property is directly related to the float property. It is used to clear one or both sides of the element that follows the floated element (the one that comes after the floated element). It specifies whether an element can be placed next to the floated element. If we clear the left side of the element, then other elements cannot be placed on the left side of the element.
+
+The clear property can have three values:
+
+left clears elements with float left
+right clears elements with float right
+both clears elements floated in either direction

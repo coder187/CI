@@ -1,0 +1,69 @@
+The Box Model - Border
+
+When creating a border with CSS, there are three values that you need to set: border-width, border-style and border-color. You can set these values individually, or you can use the shorthand border property.
+
+border-width
+We can define the border-width property as a numeric px, em, rem, vh or vw value. But it can also take a keyword thin, medium or thick.
+
+
+border-style
+The border-style property keywords available are as follows:
+
+Value	Description
+solid	
+A solid, continuous line.
+none	
+No line is drawn (default)
+dashed	
+A line that consists of dashes
+dotted	
+A line that consists of dots
+double	
+Two lines are drawn around the element
+groove	
+Adds a bevel based on the color value in a way that makes the element appear embossed into the document.
+ridge	
+Similar to groove, but reverses the color values in a way that makes the element appear proud of the page.
+inset	
+Adds a 3d look to the line that makes the element appear slightly inset to the page
+outset	
+Similar to inset, but this time slightly raised.
+
+border-color
+Like setting font colour, we can define the border-color property as rgb, rgba, hex, hsl, hsla or a colour keyword.
+
+border
+The border shorthand property
+The border property is a shorthand which can take multiple values for a line drawn around the targetted element. It takes the longhand properties border-width, border-style and border-color one at a time on the same line.
+
+/* Longhand properties for border */
+border-width: 2px;
+border-style: dashed;
+border-color: blue;
+
+/* Shorthand for the same code as above */
+border: 2px dashed blue;
+        
+
+border-radius
+If you have added a coloured border, you can give it rounded corners using the border-radius property. It too takes four values with pixel units. Like with padding, if you give border-radius one to four values
+
+Value	Description
+border-radius: 20px;	
+This text is wrapped in a div with one border radius value, so the same curve is applied to all its corners.
+border-radius: 20px 40px;	
+This text is wrapped in a div with two border radius values, so the top-left and bottom right corners have a radius of 20px, and the other two corners have a radius of 40px.
+border-radius: 20px 40px 5px;	
+This text is wrapped in a div with three border radius values, so the top-left corner has a radius of 20px, the top right and bottom left have 40px and the bottom right has 2px.
+border-radius: 20px 40px 5px 50px;	
+This text is wrapped in a div with four border radius values, so they are applied clockwise one at a time starting at the top left corner.
+
+A fun trick to know is that can make a div into a circle using the border-radius property:
+
+This is done with the following code:
+
+width: 50px;
+height: 50px;
+border: 1px solid black;
+border-radius: 50%;
+As the 50% is a relative measurement, to make the circle, your element must start as a square, with its length and width being equal. Then the order-radius curves the corners perfectly to make the circle.

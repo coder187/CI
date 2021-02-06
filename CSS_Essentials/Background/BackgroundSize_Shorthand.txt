@@ -1,0 +1,51 @@
+Using background shorthand
+
+The background shorthand CSS property allows you to set all background style properties in one declaration. This reduces the amount of code you have to write. When using the shorthand property, if other background properties are not defined, they are set to their initial values.
+
+In this example, each value has been put on its own line with a comment to explain which property it is shorthand for.
+
+    
+body {
+  background:
+     red                      /* background-color */
+     url(sunset.jpg)          /* background-image */
+     top center / 200px 200px /* background-position / background-size */
+     no-repeat                /* background-repeat */
+     fixed;                   /* background-attachment */
+}
+
+Note that the size is included immediately after the position separated with the '/' character.
+
+When using the shorthand property, the values must be in this order, but they do not all have to be used.
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-attachment
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div {
+         background-color: blue;
+         height: 70px;
+         width: 70px;
+         background : url('https://dummyimage.com/70X70/0ff/000.png') center center / cover no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>

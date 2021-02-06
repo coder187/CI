@@ -1,0 +1,34 @@
+Background Color
+
+The background-color property sets the background color of the element targeted.
+
+The color can be defined as rgb, rgba, hex, hsl, hsla or a keyword. The are also special keywords; currentcolor and transparent.
+
+/* Keyword values */
+background-color: gainsboro;
+background-color: lightcoral;
+
+/* Hexadecimal value */
+background-color: #0000ff;    /* blue opaque */
+background-color: #00f;       /* blue opaque shorthand */
+background-color: #0000ff00;  /* blue transparent */
+background-color: #00f0;      /* blue transparent shorthand  */
+background-color: #0000ffff;  /* blue opaque */
+background-color: #00ff;      /* Fully opaque shorthand  */
+
+/* RGB value */
+background-color: rgb(0, 0, 255);        /* blue opaque */
+background-color: rgba(0, 0, 255, 0.5);  /* 50% transparent */
+
+/* HSL value */
+background-color: hsl(67, 100%, 50%);         /* yellow opaque */
+background-color: hsla(67, 100%, 50%, 0.75);  /* 75% transparent */
+
+/* Special keyword values */
+background-color: currentcolor;
+background-color: transparent;
+
+/* Global values */
+background-color: inherit;
+background-color: initial;
+background-color: unset;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Outrageous Recipes</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+  </head>
+  <body>
+    <h1>Outrageous Recipes</h1>
+    <div>
+        <h2>Chocolate and Popping Candy Curry</h2>
+        <p>Surprise your guest with our signature recipe: an authentic Indian curry, but with the addition of chocolate and popping candy. Watch their faces change from delight to a mixture of confusion and horror. This dish has everything it takes to make your dinner party memorable.</p>
+    </div>
+    <div>
+        <h2>Asparagus and Mushroom Cheesecake</h2>
+        <p>What better way to finish your dinner party than with our surprisingly savoury cheesecake? Our advice is to make a small one - most guests do not return for a second serving.</p>
+    </div>
+    <div>
+        <h2>Vegan Iced Water</h2>
+        <p>This is sure to appeal to the everyone at the table. Our recipe for organic, vegan, gluten-free, non-GMO, zero sugar, low-cal, Paleo iced water with no added fat is easy to prepare ahead of time.</p>
+    </div>
+  </body>
+</html>
+
+
+body {
+    background-color: lemonchiffon;
+}
+
+h1 {
+    color:  #BADA55;
+    font-family: Sans-Serif;
+    font-size: x-large;
+}
+
+div {
+    vertical-align: top;
+    display:inline-block;
+    width:30%;
+    padding-right: 10px;
+}
+
+h2 {
+    color: SlateBlue;
+    font-family: Sans-Serif;
+    font-size: large;
+}
+
+p {
+    font-family: Sans-Serif;
+}
+
+.text-italic {
+    color: #BADA55;
+    font-style: italic;
+    font-weight: bold;
+}
