@@ -36,6 +36,7 @@ h2{
 #logo{
   float:left;
   font-size:280%;
+  margin-left:30px;
 }
 
 #menu{
@@ -309,4 +310,63 @@ footer {
 
   hr{
     display: none;
+  }
+
+  /*responsive times section. same on tablet as on phone (or smaller screens) */
+  #times div{
+    width:100%;
+    clear: both; /*stack vertically*/
+    height:150px; /*maintain height */
+    border-style:solid;
+    border-bottom-color:white;
+    border-bottom-width:1px;
+  }
+}
+
+/*responsive mobile view */
+@media screen and (max-width: 943px){
+
+  /*push the menu below the logo */
+  #menu{
+    clear: left;
+    float: left;
+    margin-left:30px;
+    margin-bottom:30px;
+    line-height: 25px;
+  }
+
+  #cover-text{
+    left:0px;
+  }
+
+  #club-ethos{
+    width:90%; /*this leaves 5% "gap" each side*/
+    height:1200px;
+    margin: 0 auto;/*center */
+  }
+
+  .left-about-heading, .right-about-heading {
+    width:inherit;
+  }
+
+  .left-about-heading h2 , .right-about-heading h2{
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-about-heading p , .right-about-heading p{
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  #photo{
+    column-count: 3;
+  }
+}
+
+/*smalller screens */
+@media screen and (max-width: 800px){
+  #photo{
+    column-count: 2;
+  }
 }
