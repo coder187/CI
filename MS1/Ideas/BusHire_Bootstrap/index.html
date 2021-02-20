@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ABC Travel | Bootstrap 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-light bg-light navbar-expand-sm"> <!-- add class fixed-top to fix the nav bar to rop of the screen -->
+      <a href="/" class="navbar-brand">ABC Travel</a>
+        <ul class="navbar-nav mr-auto"> <!-- mr-atuo push left --> 
+          <li class="nav-item mr-2 active"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="Quote.html">Instant Quote</a></li>
+          <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="login.html">Route Alerts</a></li> <!-- only display on mobile device -->
+        </ul>
+
+        <div class="d-none d-md-block"> <!-- only display on medium sized screens and above -->
+          <p class="navbar-text my-auto mr-2"><i>All services are on running to schedule</i></p> <!--my-auto - automatic top and bottom margin. mr-2 adds spacing to the right-->
+          <a href="login.html">View Timetables</a>
+        </div>
+      </nav>
+
+      
+    <article class="container mt-3"> <!-- mt-3 gives top margin to container -->
+      <div class="row"> 
+        <div class="col-12">
+          <!-- Callout -->
+          <section class="callout jumbotron text-center">
+            <h1>Mins Bus & Coach Hire Ireland</h1>
+            <p class="lead">Contact us today for the best quotes in Ireland!</p>
+            <p><button class="btn btn-lg btn-success">Instant Quote!</button></p>
+            <p class="text-muted"><small>Instant Quote is indicative of cost only.</small></p>
+          </section>
+        </div>
+      </div>
+      <!-- /.callout -->
+      <hr>
+        <!-- Quotes -->
+        <section class="quotes">
+          <div class="row"></div>
+            <div class ="col-12 my-5"</div>
+            <h2 class="text-uppercase">Testimonials:</h2>
+            <blockquote class="quote">
+                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+            </blockquote>
+            <blockquote class="quote">
+                <p>I haven't been sober for months!</p>
+                <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+            </blockquote>
+        </section>
+        <!-- /.quotes -->
+        <hr>
+
+        <!-- Available Vehicles -->
+        <section class="Available_Vehicles">
+            <h2 class="text-uppercase">Available Vehicles:</h2>
+            <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Type</th>
+            <th scope="col">Size</th>
+            <th scope="col">Suggested Use Case</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Sprinter ++</td>
+                <td>Up To 16 Luxury Leather Seats + Luggage</td>
+                <td>Small/Family group. Airport/Hotel/Corportate Transfer.</td>
+                </tr>
+            <tr>
+                <th scope="row">2</th>
+                 <td>Temsa Lux</td>
+                <td>Up To 35 Luxury Leather Seats + Luggage + Washroom</td>
+                <td>Coportate\Sorts Long Haul.</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Loxia Comfort</td>
+                <td>Up To 35 Standard Extra Leg Room Seats</td>
+                <td>Sports Team/Club. Mid Size Group. Big Boot.</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Standard Coach</td>
+                <td>Up to 57 Passengers with Huge Luggage Capacity</td>
+                <td>Larger Groups. Versatile Comfort</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Bova Style</td>
+                <td>55 Luxury Seats + Washroom + Massive Luggage</td>
+                <td>When you need to make an impression with your arrival.</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Irizar People Mover</td>
+                <td>Up To 67 Coach Passenger Seats + Huge Luggage Capacity</td>
+                <td>People Mover. Long Haul.</td>
+            </tr>
+            
+            <tr>
+                <th scope="row">7</th>
+                <td>Accessability</td>
+                <td>Up To 33 Passengers with 4 Wheelchairs on board + Washroom.</td>
+                <td>Fully accessible coach with Wheelchair lift</td>
+            </tr>
+        </tbody>
+        </table>
+                    
+        </section>
+        <!-- /.Available_Vehicles -->
+        <hr>
+        <!-- Features -->
+        <section class="features">
+            <h2 class="text-uppercase">Features:</h2>
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+            </div>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+            </div>
+            <div class="feature">
+                <h3>Feature 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+            </div>
+        </section>
+
+        <!-- /.features -->
+        <section>Centered Quote Form</section>
+        <footer>Centered Find us on Social Media</footer>
+    </article>
+  </body>
+</html>
