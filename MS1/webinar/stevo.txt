@@ -1,0 +1,86 @@
+lighthouse
+know what you want to build
+research the idea
+wireframes - balsamig/whiteboard
+use your skillset
+color scheme pinterest coolors.co
+checklist  - wireframes
+
+Readme Files
+5 Easy Marks
+
+Project Synopsis (why)
+UX
+Tech used
+Deployment (how ?)
+Bugs (present)
+Credits
+Acknowledgements
+
+complete readme please.
+
+commit often
+document everything in readme inc bugs and testing.
+
+
+build a good wireframe.
+breakpoints
+-mobile
+-tablet
+-desktop
+-xl desktop (1440p)
+
+wireframe.cc
+
+do mobile first.
+
+
+use your time wisely
+think
+research
+design
+readme
+code.
+maybe use kanban via github?
+
+kanban ---
+break it down to small pieces.
+
+todo -- > in progress -- > completed/blocked.
+
+
+note: all form fields are required
+
+
+
+https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
+
+unsplash
+pexels
+
+csstricks
+w3schools
+unicorb n revealer google play store 
+
+
+1. purpose - useful?
+2. ux design
+3. navigation
+4. ease of use
+5. info arch
+6. responsive design (iphone 5 se)
+7. image presentation - win inbuilt editing - change to square.
+compressing images. tinypng.com
+8. semantic html
+9. file structure (404 file page)
+10.version control....
+commit message 50 chars
+11. testimng
+as a user i tried to something... it broke and i fixed it...
+12. deployment
+github pages
+
+
+
+
+
