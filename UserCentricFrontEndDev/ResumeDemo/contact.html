@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="row no-gutters">
+            <a href="index.html" class ="col-md-4 logo"></a> <!-- one third width-->
+
+            <div class="col-md-8"> <!-- two thirds width using boostrap to divide the layout in thirds-->
+                <div class="row bg-color-name-title no-gutters">
+                    <div class= "col heading"> <!--class=col gives full width col-->
+                        <h1 class="name">Rosie</h1>
+                        <h2 class="title">Full Stack Developer</h2>
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col">
+                        <ul id="nav" class="list-inline menucontainer"><!--ask bootstrap to display list horizontally -->
+                            <li class= "col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"> 
+                                <!--  col-6 col-sm-3 will mean that it will be 
+                                    four elements wide when displayed in anything larger than a small screen size 
+                                    and two elements when viewed on a mobile format. -->
+                                <a class="hvr-sweep-to-bottom" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                            </li>  
+                            <li class= "col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem"> 
+                                <a class="hvr-sweep-to-bottom" href="resume.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                            </li>  
+                            <li class= "col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem"> 
+                                <a class="hvr-sweep-to-bottom" href="contact.html"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                            </li>  
+                            <li class= "col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem"> 
+                                <a  class="hvr-sweep-to-bottom" href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- two thirds col-->
+        </div> <!-- top outer row-->
+            
+        
+    </header>
+    <section></section>
+    <footer class ="container-fluid">
+        <div id="footer-details" class = "row">
+            <div class="col-sm-4"> <!-- we dont need to supply col class for mobile screens because bootstrap defaults to full width which is what we want-->
+                <h5 class="uppercase general-sub">About</h5>
+                <p class ="Inline-Block">
+                    Some notes on tech etc....
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class ="Inline-Block">
+                    Need a printable version of my CV? Download it here.
+                    <a href="#" target="_blank" class="cv-pdf">
+                        <i class="fa fa-download" aria-hidden="true"></i>           <!-- aria hidden true as there is no text in this anchor. set to true to turn off screen reader-->
+                        <span class="sr-only">Download</span>                       <!-- sr-only = screen reader only. Give the screen reader something to read. Text is not displayed-->
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a href="#" target = "_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target = "_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target = "_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target = "_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target = "_blank">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target = "_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
