@@ -1,0 +1,17 @@
+1clock
+2map marker
+3shopping bag
+4man
+5woman
+6baggage
+7ariplane
+8music
+9event
+10mobile
+11school
+12work
+drinks
+food
+travel
+holiday
+ticket
