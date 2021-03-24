@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Travel - Bus Hire Limerick</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="icon" type="image/png" href="assets/img/ico/fav_icon.png">
+      <script src="assets/js/script.js"></script>
+</head>
+<body>
+
+    <!-- navbar code from https://getbootstrap.com/docs/4.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.htm" class="navbar-brand"><img src="assets/img/kt_logo.png" alt="kelly travel logo" class="logo"></a>
+        
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"><!-- mr-atuo push left --> 
+                <li class="nav-item active "><a class="nav-link" href="index.htm">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-item" href="index.htm#about-kelly-travel">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.htm#quote">Instant Quote</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.htm#kelly-travel-fleet">Fleet Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+        
+            
+             <div class="d-none d-md-block"> <!-- only display on medium sized screens and above --> 
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            
+
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-image">
+        <header class="row">
+            <div class="col-md col1">
+                <div class="contact-form-outer">
+                    <div class="row form-header">
+                        <div class="col">
+                            <div class="right-arrow"></div> <!-- code from https://css-tricks.com/snippets/css/css-triangle/ -->
+                        </div>
+                        <div class="col">
+                            <div class="">Quote</div>
+                        </div>
+                        <div class="col">
+                            <div class="left-arrow"></div>
+                        </div>
+                    </div> <!-- end form header-->
+                    <form action="conf.html" id="quick-quote"> 
+                        <div class="form-row">
+                            <div class="col">
+                                <select class="form-control" aria-label="Select Bus Size" required>
+                                    <option value="" selected>Select Bus Size</option>
+                                    <option value="1">&#60; 17 Seats </option>
+                                    <option value="2">17 - 35</option>
+                                    <option value="3">36 - 51</option>
+                                    <option value="3">&#62; 51 Seats</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="date" class="form-control" aria-label="Select date of travel" required>
+                            </div>
+                        </div> <!-- end from row -->
+                        <div class="form-row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Collection" aria-label="Collection Point" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Destination" aria-label="Destination" required>
+                            </div>
+                        </div> <!-- end from row -->
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email address" required>
+                            </div>
+                        </div> <!-- end from row -->
+                        <div class="form-row">
+                            <div class="col">
+                                <textarea class="form-control" rows="3" placeholder="Any Additional Info" aria-label="Additional Requirements" required></textarea>
+                            </div>
+                        </div> <!-- end from row -->
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="submit" class="form-control" value="Get a Free Quote" id="quote-button" aria-label="Submit">
+                            </div>
+                        </div> <!-- end from row -->
+                    </form>
+                </div><!-- end contact form outer-->  
+            </div> <!--  end col1  -->
+
+            <div class="col-md col2"> <!-- second col header -->
+            <!-- <div class="col-md col2 d-none d-md-block"> -->
+                    <div class ="welcometext ">
+                        <h1>Limericks #1 Minibus & Coach Hire Company</h1>
+                        <p></p>
+                        <p>Serving the community for over 30 years.</p>
+                    </div> 
+                </div> <!-- end col 2 -->
+
+            </header> <!-- end hedaer section -->
+            <div class ="row contactusnow">
+                <div class="col">
+                    <p>Contact us today for a quick and easy quote <i class="fa fa-phone"></i> 555 873445678</p>
+                </div>
+            </div>
+
+            <!--  About Section -->
+            <section id = "about-kelly-travel">
+                <h2 class="about-header">Why Travel With Us?</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="circle-container">
+                            <div class="circle-cover-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class ="about-para-heading">
+                            <h2>Experience That Cant Be Beaten <i class="fa fa-user-shield"></i></h2>
+                            <hr>
+                            <p>Established in 1988, Kelly Travel have grown over the decades into the midwest's leading provider of minibus and coach hire services. 
+                            Let our experience be your guide.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <div class ="about-heading">
+                            <h2>Safety First <i class="fa fa-heart"></i></h2>
+                            <hr>                
+                            <p>Your safety is our priority. Our vehicles undergo regular safety inspections and our team of drivers complete annual Health & Safety Training.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <div class ="about-heading">
+                            <h2>Go Green <i class="fa fa-solar-panel"></i></h2>
+                            <hr>
+                            <p>Bus travel is the most energy efficient way of traveling in terms of per capita fuel consumption. 
+                                By using state-of-the-art, low-emission vehicles, Kelly Travel help make an additional contribution to overall environmental protection.
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class ="about-heading">
+                            <h2>Accessibility <i class="fab fa-accessible-icon"></i></h2>
+                            <hr>
+                            <p>Kelly Travel have a number of fully accessible vehicles available for hire. 
+                                Give us a call to discuss your requirements
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id = "kelly-travel-alt-bg">
+                <div class="row">
+                    <div class="col">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id = "kelly-travel-stats">
+                <div class="container"> 
+                    <div class ="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="spinner">
+                                        <div class="spinner-header">
+                                            <p>Years In <br> Business</p>
+                                        </div>
+                                        <div class="spinner-container">
+                                            <div id="spinner-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="spinner">
+                                        <div class="spinner-header">
+                                            <p>Full Time <br> Local Employees</p>
+                                        </div>
+                                        <div class="spinner-container">
+                                            <div id="spinner-value2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="spinner">
+                                        <div class="spinner-header">
+                                            <p>Annual CO2 Saving <br> Tonnes</p>
+                                        </div>
+                                        <div class="spinner-container">
+                                            <div id="spinner-value4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm col-lg">
+                                    <div class="spinner">
+                                        <div class="spinner-header">
+                                            <p>Daily Passenger <br> Journeys</p>
+                                        </div>
+                                        <div class="spinner-container-lg">
+                                            <div id="spinner-value3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                        </div><!-- end of col-->
+                    </div> <!-- end of row -->
+                </div> <!-- end container-->
+            </div>
+            
+            <section id = "kelly-travel-fleet"> <!--card code from bootstrap docs-->
+                <div class ="row">
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/img/cards/sprinter_300x170.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mini Bus</h5>
+                                            <p class="card-text">16 Seater with some luggage<br>16 x <i class="fas fa-male"></i> &nbsp; 10 x <i class="fas fa-suitcase"></i></p>
+                                            <a href="fleet.html#sprinter" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/img/cards/temsa_300x166.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Midi Coach</h5>
+                                            <p class="card-text">17 - 35 Seater with plenty of luggage<br>35 x <i class="fas fa-male"></i> &nbsp; 40 x <i class="fas fa-suitcase"></i></p>
+                                            <a href="fleet.html#midi" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" >
+                                        <img class="card-img-top" src="assets/img/cards/travego_300x170.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Executive Coach</h5>
+                                            <p class="card-text">36 - 67 Seater <br>67 x <i class="fas fa-male"></i> &nbsp; 70 x <i class="fas fa-suitcase"></i></p>
+                                            <a href="fleet.html#coach" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div> <!-- end container -->
+                    </div> <!-- end col -->
+                </div><!-- end row -->
+            </section>
+
+            <footer class ="row" id="footer">
+                <div class="col">
+            
+            <div id="footer-details" class = "row" >
+                    <div class="col-sm-4"> 
+                        <h5 class="uppercase general-sub">Address</h5>
+                        <p class ="Inline-Block">Unit 6C,<br>Eastway Business Park,<br>Limerick<br>EIR 0417</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5 class="uppercase general-sub">Contact</h5>
+                        <ul>
+                            <li><i class="fa fa-mobile"></i> Emergency (24/7 Contact) : <strong>555 3445678</strong></li>
+                            <li><i class="fa fa-phone"></i> Office (Business Hours) : <strong>555 403298</strong></li>
+                            <li><i class="fa fa-mobile"></i> Sales : <strong>555 873445678</strong></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                            <h5 class="uppercase general-sub">Social</h5>
+                            <ul class="list-inline social-links">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/" target = "_blank">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        <span class="sr-only">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.twitter.com/" target = "_blank">
+                                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        <span class="sr-only">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/" target = "_blank">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        <span class="sr-only">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.tumblr.com/" target = "_blank">
+                                        <i class="fab fa-tumblr" aria-hidden="true"></i>
+                                        <span class="sr-only">Tumblr</span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+            </div>
+        </div>
+            </footer>
+                    </div> <!-- end container div-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+         <script>
+            var obj = document.getElementById("spinner-value");
+            animateValue(obj, 0, 30, 5000);
+            obj = document.getElementById("spinner-value2");
+            animateValue(obj, 0, 32, 5000);
+            obj = document.getElementById("spinner-value3");
+            animateValue(obj, 0, 1500, 5000);
+            obj = document.getElementById("spinner-value4");
+            animateValue(obj, 0, 114, 5000);
+        </script>
+    </body>
+</html>

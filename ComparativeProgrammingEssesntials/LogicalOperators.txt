@@ -1,0 +1,25 @@
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPL_06_20+2020_T1/courseware/0a784dc8dc30415a9a1c5ac059b0ae3a/ab8778cb8cc74ace9690b0d50e89b5fc/
+
+
+
+
+
+a	b	a OR b	Python Usage	JavaScript Usage
+true	true	true	a or b	a || b
+true	false	true	a or b	a || b
+false	true	true	a or b	a || b
+false	false	false	a or b	a || b
+The NOT Operator negates the operand when you place it in front of it:
+
+a	b	NOT a	NOT b	Python Usage	JavaScript Usage
+true	true	false	false	not a / not b	!a / !b
+true	false	false	true	not a / not b	!a / !b
+false	true	true	false	not a / not b	!a / !b
+false	false	true	true	not a / not b	!a / !b
+
+
+
+Python Logical Operators
+https://codeinstitute.s3-eu-west-1.amazonaws.com/ComparativeProgramming/Python+-+Logical+Operators.png
+
+

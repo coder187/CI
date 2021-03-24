@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Work Sans', sans-serif; */
+
+
+.logo{
+    height: 40px;
+}
+.col1{
+    height: 600px;
+   /*border:solid 2px gold;*/
+}
+
+.col2{
+  height: 600px;
+  /*border:solid 2px red;*/
+}
+
+
+.container-fluid{
+  position: relative;
+  padding-left:0;
+  padding-right:0;
+}
+
+.bg-image{
+    background: url('../img/scania_961x600.png') no-repeat  center center;
+    height:600px;
+    width:100%;
+}
+
+
+/*------------ Welcome text --------------*/
+.welcometext h1,h2 {
+    font-family: "Work Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.welcometext p{
+    font-family: "Roboto",sans-serif;
+}
+
+.welcometext ul{
+    list-style-type: none;
+}
+
+.welcometext ul li{
+    font-family: "Roboto",sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.5em;
+}
+
+.welcometext{
+    top:100px;
+    text-align:center;
+    color:#fafafa;
+    height:175px;
+    width: 450px;
+    left:15px;
+    float:left;
+    position:absolute;
+    /*background-color: rgba(94, 23, 53, .5); */
+    background-color: rgba(24, 95, 66, .5); /*opacity*/
+}    
+/*------------ Quick Contact Form --------------*/
+.form-header{
+    height: 100px;
+    width: 450px;
+    padding-left: 30px;
+    padding-right: 15px;
+    /*float: right;*/
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 4em;
+    color :#185F42;    
+}
+
+.left-arrow, .right-arrow{
+	border-color: transparent #185F42;
+	border-style: solid;
+	height: 0px;
+	width: 0px;
+}
+
+.left-arrow{
+    border-width: 40px 40px 40px 0px;
+}
+
+.right-arrow {
+    border-width: 40px 0px 40px 40px;
+}
+
+.contact-form-outer{
+    float:right;
+}
+
+#quick-quote{
+    padding-top:0px;
+    width:450px; 
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.form-control:hover{
+    border-color: #185F42;
+}
+
+.form-row{
+padding: 5px 15px;
+}
+
+.row label{
+    color:#fafafa;
+}
+
+#quote-button{
+    background-color: #185F42;
+    color: white;
+    margin-top:5px;
+    margin-bottom:20px
+}
+
+
+/*------------ Contact US Now --------------*/
+.contactusnow{
+    background-color: #CE145F;
+    height:25px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color:#fafafa;
+}
+
+/*------------ Footer --------------*/
+
+footer{
+    background-color: #525252;
+    color:#fafafa;
+    min-height:120px;
+}
+
+.social-links{
+    padding-bottom: 15px;
+    font-size:40px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height:32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color:#fafafa;
+    background: #8f8f8f;
+    transition: all .5s ease-in-out; /*note transitions are in parent element. Tranisition will take effect when mouse hovers and stops when mouse leaves*/
+    -moz-transition: all .5s ease-in-out;   /*work around for browsers mozilla*/
+    -webkit-transition: all .5s ease-in-out;/*work around for browsers safari apple*/
+    -o-transition: all .5s ease-in-out;     /*work around for browsers opera*/
+}
+.social-links li a i:hover{ /*note no whitespace on pseudo element */
+    background-color: #185F42;
+}
+
+#footer-details{
+    padding:20px;
+    text-align: center;
+}   
+
+h1,h2,h3,h4{
+    margin:0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.general-sub{
+    font-family: "Work Sans",sans-serif;
+    color:#fafafa;
+    font-weight: 600;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+footer ul{
+    padding:5px;
+}
+
+
+/*------------ Media Queries General--------------*/
+    
+@media screen and (max-width: 767px) {
+    
+    .contact-form-outer{
+        float:none;
+        margin:0 auto;
+    }
+    
+    
+    .form-header{
+    float:none;
+        margin:0 auto;
+    }
+    
+    #quick-quote{
+        float:none;
+        margin:0 auto;
+    }
+    
+    
+    .col2{
+        padding-top:10px;
+        height:200px;
+        padding-left: 10px;
+    } 
+    
+    .welcometext{
+        top: 20px;
+        height:150px;
+        width:95%;
+    }
+       
+     .contactusnow{
+        font-size: medium;
+    }
+   
+}
+
+@media screen and (max-width: 577px) { 
+    .contactusnow{
+        font-size: small;
+        height:50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #quick-quote{
+        padding-left:5px;
+        padding-right:5px;
+        width:305px; 
+    }
+
+    .left-arrow{
+        border-width: 30px 30px 30px 0px;
+    }
+
+    .right-arrow {
+        border-width: 30px 0px 30px 30px;
+    }
+
+    .form-header{
+        width: 305px;
+        padding-left: 15px;
+        padding-right: 5px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #quick-quote{
+        width:270px !important; 
+    }
+    .form-header{
+        width: 270px !important;
+        font-size: 1.5em;
+    }
+
+    .left-arrow{
+        border-width: 20px 20px 20px 0px !important;
+    }
+
+    .right-arrow {
+        border-width: 20px 0px 20px 20px !important;
+    }
+    
+}
+
+
+/*----------------------------About Section--------------------------------------------------*/
+
+#about-kelly-travel{
+    text-align: center;
+}
+#about-kelly-travel h2{  
+    font-family: "Work Sans",sans-serif;
+}
+
+#about-kelly-travel p{
+    font-family: "Roboto",sans-serif;
+}
+
+.about-header{
+    padding-top:20px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.about-para-heading{
+    padding-bottom:10px;
+}
+
+.circle-container{
+    width:300px;
+    height:300px;
+    padding:30px;
+    border:1px solid #cccccc;
+    border-radius: 50%; /*creates a circle */
+    margin:0 auto; /*centers the content */
+}
+
+.circle-cover-bg{
+    background: url("../img/bus-interior.jpg") no-repeat center center;
+    height:100%;
+    width:100%;
+    border-radius: 50%; /*creates a circle */
+    /*note the image is 300pxX300px to help with centering the image */
+}
+
+/*****************Spinners******************************/
+.spinner{
+    font-family:"Roboto",sans-serif;
+    font-size:20px; 
+    text-align: center;
+    padding-top:10px;
+}
+
+
+.spinner-container, .spinner-container-lg{
+    width:55px;
+    height:55px;
+    padding:10px;
+    border:1px solid #cccccc;
+    border-radius: 50%; /*creates a circle */
+    margin:0 auto; /*centers the content */
+}
+.spinner-container-lg{
+    width:75px;
+    height:75px; 
+    padding-top:20px;
+}
+
+@media screen and (max-width: 991px) { 
+    .spinner-header{
+        min-height:110px;
+    }   
+
+}
+
+@media screen and (max-width: 575px) { 
+    .spinner-header{
+        min-height:10px;
+    }   
+
+}
+
+/*****************Alt Background Resize******************************/
+@media (max-width: 480px) {
+    #kelly-travel-alt-bg{
+        height:202px;
+        width:100%;
+        background: url("../img/kids-on-a-bus-13441-008_360x202.jpg") no-repeat center center;
+        background-size: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+ #kelly-travel-alt-bg{
+        height:300px;
+        width:100%;
+        background: url("../img/kids-on-a-bus-13441-008_533x300.jpg") no-repeat center center;
+        background-size: auto;
+    }
+}
+@media (min-width: 1025px) {
+    #kelly-travel-alt-bg{
+        height:600px;
+        width:100%;
+        background: url("../img/kids-on-a-bus-13441-008_1067x600.jpg") no-repeat center center;
+        background-size: auto;
+    }
+}
+
+/*****************FLEET CARDS******************************/
+
+#kelly-travel-fleet .col{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.card{
+    width: 18rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*****************FLEET PAGE******************************/
+.vehicle-desc{
+    padding-bottom:20px;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+
+/* code from https://css-tricks.com/text-blocks-over-image */
+.vehicle-desc h2 { 
+   position: absolute; 
+   top: 45%; 
+   left: 3%; 
+   width: 100%; 
+   
+}
+
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding:10px; 
+}
+
+.vehicle-desc ul li{
+    font-family: "Work Sans",sans-serif;
+    color:#185F42;
+}
+
+.text-desc{
+    padding-top:20px;
+}
