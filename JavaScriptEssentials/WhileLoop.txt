@@ -1,0 +1,65 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript-Specific Core Concepts  JavaScript Iteration  While Loops
+Search in Module
+ Previous
+Next 
+other For Loops 
+problem For Loops Challenge 
+other While Loops 
+problem While Loops Challenge 
+other Do/While Loops 
+problem Do/While Loops Challenge 
+other Controlling Iteration (Break & Continue) 
+problem Controlling Iteration with break & continue Challenge 
+other Nested Iteration 
+problem Nested Iteration Challenge 
+While Loops
+ Bookmark this page
+WHAT ARE THEY?
+
+A method of repeating the same operation or block of code multiple times.
+
+ 
+WHAT DO THEY DO?
+
+Repeat the operation or block of code indefinitely until a condition evaluates to false.
+
+ 
+HOW DO YOU USE THEM?
+
+By providing a condition and an operation or block of code to repeat.
+
+
+
+While Loops
+
+headings graphics
+While loops are another method of repeating the same block of code multiple times in JavaScript. They are subtly different from for loops, though, because a for loop almost always has an end (unless you deliberately cause it to loop forever). A while loop on the other hand will repeat the operation or block of code indefinitely until a specified condition is false. The syntax for a while loop is simpler too. All you need to provide is the condition and the code you'd like to repeat:
+
+while (conditon) {
+  // code to repeat
+}
+While loops are commonly used in gaming or in situations where you want the user to have the control to break out of the loop. Using an expression like while (true) {...} will repeat the code in the {...} forever - an infinite loop. Often it's possible to do the same thing with a while loop as you can with a for loop, so it's good to know both. Here is the same example as the previous unit using a while loop:
+
+let fruits = ['apples', 'oranges', 'bananas', 'cherries'];
+let numberOfFruits = fruits.length;
+
+let i = 0;
+while (i < numberOfFruits) {
+  console.log(fruits[i] + ' are delicious!');
+  i++;
+}
+
+console.log('I love fruit!');
+Run this code
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

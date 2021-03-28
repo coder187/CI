@@ -1,0 +1,38 @@
+headings graphics
+In JavaScript there are two operators which don't exist in some other languages (namely Python). They are the increment (++) and decrement (--) operators. These operators offer a shortcut for adding one to a value. The following two pieces of code are equivalent:
+
+Without Increment Operator:
+
+let x = 1;
+x = x + 1;
+With Increment Operator:
+
+let x = 1;
+x++;
+In both samples above, x is incremented by 1 and becomes 2. This is why you see x++ in the syntax of some loops in JavaScript:
+
+for (let x = 0; x < 10; x++){
+  console.log(x);
+}
+The last step to execute after each iteration of the loop is x++, which increments it by 1. Once x is no longer less than 10, the loop stops and code execution continues outside the loop. The same works for decrementing with --, that is, the following loop will iterate backwards from 10 to 0:
+
+for (let x = 10; x >= 0; x--){
+  console.log(x);
+}
+You can use the increment and decrement operators to declare a new variable and increment/decrement the original one simultaneously, too, by using them either as a prefix or a postfix. If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing. If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing. The following examples are from the MDN website article on incrementing:
+
+Postfixing:
+
+let x = 3;
+y = x++;
+
+// y = 3
+// x = 4
+Prefixing:
+
+let x = 3;
+y = ++x;
+
+// y = 4
+// x = 4
+There's nothing special going on here. The rules above apply the same to the decrement operator. These operators don't exist in all languages but they are here in JavaScript to be used in reducing your code's verbosity and complexity. Whenever you need to increment or decrement a value, you can do it concisely and in a variety of ways by using the increment or decrement operators.

@@ -1,0 +1,25 @@
+WHAT IS IT?
+
+The concept of differentiation between things that equal, strictly equal and exactly identical.
+
+ 
+WHAT DOES IT DO?
+
+Allows you to be more strict when checking for equality.
+
+ 
+HOW DO YOU USE IT?
+
+Remember the difference between == and === (JavaScript) or is (Python).
+
+
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPL_06_20+2020_T1/courseware/0a784dc8dc30415a9a1c5ac059b0ae3a/ab8778cb8cc74ace9690b0d50e89b5fc/
+
+Equality & Identity
+
+Equal is not the same as identical, at least in terms of computing. When coding, it's important to remember that the computer will always treat things 100% literally unless you tell it not to. When checking equality, developers can check not only the equality of the values but also whether the data types are the same, and whether or not the two objects being tested are actually the same object in memory.
+
+equality Identity
+This concept exists in many programming languages, including JavaScript and Python. In JavaScript, the == operator checks whether two values are equal, but doesn't check whether they are the same data type. Because of this, expressions like 1 == "1" will evaluate to true in JavaScript since the values are the same. JavaScript internally coerces the values so their data types match, and then checks their equality, rather than returning an explicit false because one is a string and the other is a number. To avoid this, you should always use the === (strict equality) operator in JavaScript, since it checks that the types match as well and thus 1 === "1" will return false, as it should.
+
+In Python there is a similar operator, is, which tests whether the objects being tested are literally the same object in memory. In order to test whether two pieces of data have the same data type in Python, you can use the isinstance() function, which you'll learn more about later. For now, what you should take away from this unit is that equality and identity are not the same thing. Always beware of being misled by equality checks, and remember to consider not only equality but also the type of data you're working with when determining whether two things are truly the same.

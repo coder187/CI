@@ -1,0 +1,10 @@
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPL_06_20+2020_T1/courseware/0a784dc8dc30415a9a1c5ac059b0ae3a/ab8778cb8cc74ace9690b0d50e89b5fc/
+
+Operator	Name	Purpose
+&	AND	Sets each bit to 1 if both bits are 1
+|	OR	Sets each bit to 1 if one of two bits is 1
+^	XOR	Exclusive OR: Sets each bit to 1 if only one of two bits is 1
+~	NOT	Inverts all the bits
+<<	Left shift	Shifts left by pushing zeros in from the right, and lets the leftmost bits fall off
+>>	Right shift	Shifts right by pushing copies of the leftmost bit in from the left, and lets the rightmost bits fall off
+>>>	Zero-fill (unsigned) right shift	Shifts right by pushing zeros in from the left, and lets the rightmost bits fall off (JavaScript only)

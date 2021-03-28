@@ -1,0 +1,47 @@
+Number.isNaN()	Returns whether the passed value is Not a Number	isNaN("Hello!");	true
+Number.isFinite()	Returns whether the passed value is finite	isFinite(Infinity);	false
+Number.isInteger()	Returns whether the passed value is an integer	isInteger(123);	true
+Number.parseFloat()	Attempts to convert the passed value to a float	parseFloat("123.45");	123.45
+Number.parseInt()	Attempts to convert the passed value to an integer	parseInt("123.45");	123
+The following are instance methods which operate on a Number instance
+toFixed()	Returns a string representing the number with the passed number of decimal places	123.45.toFixed(4);	"123.4500"
+toPrecision()	Returns a string representing the number with the passed precision	123.45.toPrecision(4);	"123.5"
+toString()
+
+
+
+A Note About Floats
+ Bookmark this page
+WHAT IS IT?
+
+A note about the inherent inaccuracy of floating point arithmetic.
+
+ 
+WHAT DOES IT DO?
+
+Provides a solution for the slight inaccuracies that exist in floating point arithmetic.
+
+ 
+HOW DO YOU USE IT?
+
+Convert floating point numbers to base 10 integers or use rounding to get the expected result of inaccurate operations.
+
+
+
+A Note about Floats
+
+headings graphics
+You learned in the last unit that every number in JavaScript is a floating point number. This means that JavaScript math (or any floating-point math, for that matter), isn't 100% accurate. This is because there are some decimal numbers that cannot be represented perfectly in binary (the language of computers). You cannot represent the fraction 1/3 perfectly in the base 10 (decimal) system: 0.333333... is always an estimation no matter how many decimal places you add, because 1 is not evenly divisible by 3. This same problem exists in the base 2 system (binary), so in programming languages that use floating point arithmetic, values that cannot be represented perfectly are rounded:
+
+let decimal = 0.1;
+let otherDecimal = 0.2;
+let sum = decimal + otherDecimal
+
+console.log(sum);  // 0.30000000000000004
+You don't need to know the exact intracacies of why it happens, but you can read more about this well-known problem here. Most importantly, a common way to solve the problem and get an accurate result is to convert everything to integers based on the number of decimal places desired in the result:
+
+console.log(0.1 + 0.2);  // 0.30000000000000004
+console.log((0.1 * 10 + 0.2 * 10) / 10);  // 0.3
+
+console.log(1.03 + 1.04);  // 2.0700000000000003
+console.log((1.03 * 100 + 1.04 * 100) / 100);  // 2.07

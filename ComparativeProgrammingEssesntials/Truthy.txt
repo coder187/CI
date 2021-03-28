@@ -1,0 +1,15 @@
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPL_06_20+2020_T1/courseware/0a784dc8dc30415a9a1c5ac059b0ae3a/ab8778cb8cc74ace9690b0d50e89b5fc/
+
+
+
+Value	Javascript Boolean Value	Python Boolean Value
+false or False	false	False
+"" or ''	false	False
+0 values (0, 0.0, -0, 0n, etc)	false	False
+null or None	false	False
+undefined	false	N/A
+NaN	false	N/A
+[] or {}	true	False
+() or set()	N/A	False
+range(0)	N/A	False
+Anything else non-zero or non-empty	true	True

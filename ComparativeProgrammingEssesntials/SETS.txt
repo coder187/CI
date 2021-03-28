@@ -1,0 +1,55 @@
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPL_06_20+2020_T1/courseware/0a784dc8dc30415a9a1c5ac059b0ae3a/68245598e92a4b66867e1b6fe4bcc45b/
+
+
+
+WHAT ARE THEY?
+
+Data structures containing only unique, unordered and immutable elements.
+
+ 
+WHAT DO THEY DO?
+
+Allow you to create collections of items that cannot be changed once added.
+
+ 
+HOW DO YOU USE THEM?
+
+By using the Set() object/function (In JavaScript or Python) or surrounding the set of items (note: not key/value pairs) with curly braces (Python only).
+
+
+
+Sets
+
+Another useful data structure you will come across in many programming languages is the Set. Sets are similar to lists, arrays, dictionaries and objects in that they are organizational structures used for housing data, but they are unique in a few ways:
+
+Sets are mutable, but their members cannot be changed. Once an item is added to a set, it must be removed and replaced in order to be changed.
+Sets are unordered. There is no way to reference an item by index or name in a set.
+Sets cannot contain duplicate values. For this reason they can be useful in eliminating duplicates from other data structures.
+sets
+You can define a set in different ways depending on the language, but you'll find that the unique properties of sets (e.g. being unordered, requiring immutable members, and having no duplicates) are common to almost all programming languages. In both JavaScript and Python, you can define a set using the set object, which takes an iterable as its argument:
+
+JavaScript:
+let mySet = new Set([1, 2, 3, 4, 5]);
+Python:
+my_set = set([1, 2, 3, 4, 5])
+Note: In Python you can also define a set using curly braces: my_set = {1, 2, 3, 4, 5}. Notice there are no key/value pairs here. If there were, the curly braces would indicate that it's a dictionary.
+
+Like the other data structures you've learned about so far, sets can house multiple types of data at the same time. However, since set elements must be immutable, they cannot contain other iterables like lists, dictionaries or other sets.
+
+let myMixedSet = new Set(1, 'Apple', true); // ok
+let myMixedSet = new Set(1, 'Apple', [1, 2, 3]); // not ok, set contains a list
+Sets are iterable, meaning you can loop through them. In JavaScript, however, iteration of a set is a bit more complex because sets have no indexes to reference. We'll cover that in the future. Here's how to iterate a set in Python:
+
+directions = {'north', 'south', 'east', 'west'}
+for direction in directions:
+  print(direction)
+Sets have a variety of methods you can use to modify them. Some common ones you may need are listed in the following table. Note: this list is not intended to be all-inclusive as different languages have different method availability. You'll learn more about how to use these in the future:
+
+Method/Function	Purpose
+add()	Add an element to the set
+remove()/delete()	Remove a specific element from the set
+clear()/delete()	Clear all elements from the set
+pop()	Pop a random element out of the set
+update()	Add the items of another set to this set
+.size/len()	Get the number of items in the set
+The set is the last of the key data structures you'll learn about in these lessons. By combining the functionality of lists/arrays, dictionaries/objects, and sets, you'll be able to structure and interact with data in a multitude of useful ways. As you progress, remember these three key data structures.
