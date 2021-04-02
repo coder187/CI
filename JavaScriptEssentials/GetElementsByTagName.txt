@@ -1,0 +1,84 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Reading & Navigating The DOM  Getting Elements by Tag Name
+Search in Module
+ Previous
+Next 
+other Getting Elements by Tag Name 
+problem Getting Elements by Tag Name Challenge 
+other Getting Elements by Class Name 
+problem Getting Elements by Class Name Challenge 
+other Getting Elements by ID 
+problem Getting Elements by ID Challenge 
+other Parents, Children & Siblings 
+problem Parents, Children & Siblings Challenge 
+other Getting Specific Element Properties 
+problem Getting Specific Element Properties Challenge 
+Getting Elements by Tag Name
+ Bookmark this page
+WHAT IS IT?
+
+The getElementsByTagName() method.
+
+ 
+WHAT DOES IT DO?
+
+Returns an HTMLCollection of all the elements of the specified tag name.
+
+ 
+HOW DO YOU USE IT?
+
+By passing it the tag name you would like to get, e.g. getElementsByTagName('p')
+
+
+
+Getting Elements by Tag Name
+
+headings graphics
+The getElementsByTagName() method is a method of the document object which, as its name implies, gets all elements with a specified tag name. This method is the first of many you'll learn which have the ability to get specific nodes (which you learned about in the last unit) out of the DOM tree so you can store them in variables, read their values, manipulate them or delete them. The syntax of this method is simple:
+
+document.getElementsByTagName('tagname');
+The getElementsByTagName() method returns an HTMLCollection, which is an array-like object containing all the elements of the tag name you specify. The collection is iterable like an array and thus can be indexed, and also has a few properties and methods such as .item() which returns the element at the specified index, .length which returns the number of elements found, and .namedItem()which returns an element with the specified id attribute if it exists in the collection.
+
+To use the getElementsByTagName() method, simply pass it the tag name you wish to find and it will return all the matching elements:
+
+let allParagraphs = document.getElementsByTagName('p');
+If you need something more specific, like the first paragraph in the list, a specific one based on its id, or the number of paragraphs found, you can access them by attaching the appropriate property or index to the end of the function call, like this:
+
+let firstParagraph = document.getElementsByTagName('p')[0];
+let numParagraphs = document.getElementsByTagName('p').length;
+let secondParagraph = document.getElementsByTagName('p').item(2);
+let specificParagraph = document.getElementsByTagName('p').namedItem('specific');
+
+console.log(firstParagraph);
+console.log(numParagraphs);
+console.log(secondParagraph);
+console.log(specificParagraph);
+In the above, though, the document.getElementsByTagName('p') is becoming quite repetitive. This is a good chance to refactor the code a bit. If you know you'll be using the same variable over and over, like the list of paragraphs above where we might want do a number of different things with it, you can assign the HTMLCollection itself to a variable, and then use the properties/indexes on the variable instead. Here's an example that achieves the same as the above, but in a less verbose way:
+
+let allParagraphs = document.getElementsByTagName('p');
+
+console.log(allParagraphs);                        // The HTMLCollection
+console.log(allParagraphs[0]);                     // The first paragraph in the document
+console.log(allParagraphs.length);                 // The number of 'p' elements found
+console.log(allParagraphs.item(2));                // The 'p' element at index 2 in the collection
+console.log(allParagraphs.namedItem('specific'));  // The 'p' element with id="specific"
+In the runnable example below, there are a number of HTMLCollections shown. Because HTMLCollections are array-like, they're iterable too, and you can loop through them to perform operations on all of their elements. This and some of the other functionality available is demonstrated in the runnable example below. Be sure to review both the JavaScript in script.js and the HTML in index.html and that you understand the connection between the two. You can also experiment with reassigning some of the variables and repositioning the indexes and properties. Run the example as is, study it, then see if you can make it produce the same results in a different way:
+
+
+Runnable Example
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

@@ -1,0 +1,101 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Handling DOM Events  Click Events
+Search in Module
+ Previous
+Next 
+other Click Events 
+problem Click Events Challenge 
+other Mouse Movements & Scrolling 
+problem Mouse Movements & Scrolling Challenge 
+other Loading Events 
+problem Loading Events Challenge 
+other Change Events 
+problem Change Events Challenge 
+other Keyboard Events 
+problem Keyboard Events Challenge 
+other Adding Event Listeners 
+problem Adding Event Listeners Challenge 
+other Working With JavaScript Functions 
+problem Working With JavaScript Functions Challenge 
+Click Events
+ Bookmark this page
+WHAT IS IT?
+
+The JavaScript click event
+
+ 
+WHAT DOES IT DO?
+
+Represents a mouse click in a programmatic way.
+
+ 
+HOW DO YOU USE IT?
+
+By either capturing the event and executing some code in response, or trigging a virtual click to simulate a user clicking the mouse.
+
+
+
+Click Events
+
+headings graphics
+An important concept when working in JavaScript is the concept of events. Events represent the user taking some action, or more generically, something happening within the context of JavaScript and the browser. Examples of things that could be events in JavaScript are the user clicking the mouse, scrolling up or down the page or pressing a key on the keyboard; an input box being changed; the page load completing and so on. In JavaScript, these events allow you to execute code in response to user actions and other situations that occur naturally during the process of using the browser.
+
+There are hundreds of events. Just take a look at this list in the MDN Event Reference! There's no way we could teach you all the possible events in a single course like this, and besides, there's no way anyone could remember them all anyway. Instead, we'll focus on the most common events you'll use to get started with handling user interaction in JavaScript, and you'll learn the rest through experience as you need them. One of the most common and useful events is the click event, because it allows you to both capture when the user has clicked on something as well as to simulate a user clicking on something with JavaScript.
+
+There are two primary ways to utilize click events in JavaScript:
+
+Capturing a click event and executing some code in response to it
+Simulating a click event in order to trigger some action in the browser
+We actually used this event in the last lesson to capture the click of the buttons which modified the DOM. If you look back at those examples you'll see that each of the buttons has an onclick attribute which calls one of the functions written in the script.js file. This is the most common and straightforward way to capture a click event on a specific element and is usually what you will use this event for. After all, you probably don't want to capture every click, but rather specific clicks on specific items so you can respond accordingly with your JavaScript code. The following button, for example, will trigger an alert when clicked:
+
+Click to Trigger Alert!
+Here's the source code for it:
+
+<button onclick="alert('Hello! You clicked the button!');">
+  Click to Trigger Alert!
+</button>
+Of course, if you want to do anything more complex than a single line or two of JavaScript it's better to create a function like we did in the previous lesson's examples, and call the function on the click event instead.
+
+Triggering a Click:
+Each element in the DOM has a click() method as well, which allows you to simulate a click on that element. The simplest way to demonstrate this is by creating a clickable checkbox and using a button to simulate the user clicking on it:
+
+ Click the Checkbox!
+Here's the code for the above:
+
+  <input id="check" type="checkbox" />
+  <button onclick="document.getElementById('check').click();">
+    Click the Checkbox!
+  </button>
+Here you can see that it doesn't matter which you click on, the button or the checkbox. Both will select or deselect the checkbox appropriately because the checkbox just behaves normally, and the button's onclick attribute triggers a call to the checkbox's click method when you click it.
+
+To summarize, here is a table containing the most common mouse events used when tracking mouse clicks:
+
+Event/Property	Description
+EVENTS
+onclick	The event occurs when the user clicks on an element
+oncontextmenu	The event occurs when the user right-clicks on an element to open a context menu
+ondblclick	The event occurs when the user double-clicks on an element
+onmousedown	The event occurs when the user presses a mouse button over an element
+onmouseup	The event occurs when a user releases a mouse button over an element
+PROPERTIES
+button	Returns which mouse button was pressed when the mouse event was triggered
+There are countless reasons you'll find throughout your development career to both capture and trigger mouse clicks, so remember these two tricks as you move forward. The example below demonstrates that click events work all over the place, on every element!
+
+
+Runnable Example
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

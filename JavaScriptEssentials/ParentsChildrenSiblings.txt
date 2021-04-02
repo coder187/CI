@@ -1,0 +1,72 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Reading & Navigating The DOM  Parents, Children & Siblings
+Search in Module
+ Previous
+Next 
+other Getting Elements by Tag Name 
+problem Getting Elements by Tag Name Challenge 
+other Getting Elements by Class Name 
+problem Getting Elements by Class Name Challenge 
+other Getting Elements by ID 
+problem Getting Elements by ID Challenge 
+other Parents, Children & Siblings 
+problem Parents, Children & Siblings Challenge 
+other Getting Specific Element Properties 
+problem Getting Specific Element Properties Challenge 
+Parents, Children & Siblings
+ Bookmark this page
+WHAT ARE THEY?
+
+JavaScript parent, child and sibling methods.
+
+ 
+WHAT DO THEY DO?
+
+Allow you to traverse the DOM tree by locating nodes as parents, children and siblings of other nodes.
+
+ 
+HOW DO YOU USE THEM?
+
+Call one of the methods on a node to get its parent, children and/or siblings, if they exist.
+
+
+
+Parents, Children and Siblings
+
+headings graphics
+In HTML, all elements are related in some way. The entire DOM tree is a hierarchical, familial structure where parents have children, children have siblings, siblings can have children, children can have other children and so on. This structure is critical to your understanding of how to navigate and manipulate the DOM with JavaScript, and there are several methods available within JavaScript that allow you to access different nodes based on these relationships. In the image here, the li elements are both parents and children ... they are children of the ul elements and parents to anything contained within them. The ul element could also have siblings, and is most likely a child itself of a higher element.
+
+The DOM element object, which represents a specific HTML element, has a number of properties and methods you can use to access its related elements in the DOM tree. Four of the most important properties available are related to finding the element's parent, children and siblings:
+
+.parentNode: Gets the current element's parent node. If the current element is anything other than <html>, this property will return the element's parent element. Otherwise, it will return the document object.
+.children: Returns an HTMLCollection of the elements children (anything nested within it in the DOM tree).
+.nextElementSibling/.previousElementSibling: Finds the next sibling/previous sibling of the given element, i.e. the closest one at the same nesting level in the DOM tree.
+By combining these four methods with your ability to get an element by its tag name, class name or id, you can efficiently navigate around the DOM and access any element you need. To access the associated property from above on any element, just attach it to the element at hand. For example, consider that we have a div element with an id of main-div:
+
+let mainDiv = document.getElementById('main-div');  // First get the div itself
+
+let parent = mainDiv.parentNode;  // the div's parent element
+let children = mainDiv.children;  // the div's children
+let firstChild = mainDiv.children[0];  // the div's first child
+let nextSibling = mainDiv.nextElementSibling;  // the next element at the same nesting level
+let prevSibling = mainDiv.previousElementSibling;  // the previous element at the same nesting level
+Of course, once you've got the above, there's nothing stopping you from getting the children, siblings or parents of the div's children/siblings. You can use these methods to find any element in the entire HTML structure and build collections of related elements which you can then operate on and manipulate. A runnable example below demonstrates how you can use these methods to your advantage. As always, make sure you review both the JavaScript and the HTML:
+
+
+Runnable Example
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

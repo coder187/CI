@@ -1,13 +1,26 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <script src="JavaScript.js"></script>
+    <title>Parents, Children and Siblings</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <div id="main">
+        <h1>My Parent element is a div</h1>
+        <p class="main-content">All the elements containded within the surrounding div element are siblings.</p>
+        <p class="main-content">Which also means all the elements within this div elements  are childern of the div element</p>
+    </div>
+    <section>
+        <h1 class="section-header">My parent element is a Section</h1>
+        <p class="section-content">The section element is the next sibling element of the div element.The div element is the previous sibling element of the section</p>
+        <p class="section-content">The h1 element and the three paragraphs in this section element are its children elements</p>
+        <p class="section-content">The h1 element and the three paragraphs are siblings</p>
+    </section>
+
+ 
     <script>
-        alert("a+b=" + add(1,2));
+        alert("a+b=" + add(1, 2));
     </script>
+
 </body>
 </html>

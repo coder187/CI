@@ -1,0 +1,82 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Handling DOM Events  Loading Events
+Search in Module
+ Previous
+Next 
+other Click Events 
+problem Click Events Challenge 
+other Mouse Movements & Scrolling 
+problem Mouse Movements & Scrolling Challenge 
+other Loading Events 
+problem Loading Events Challenge 
+other Change Events 
+problem Change Events Challenge 
+other Keyboard Events 
+problem Keyboard Events Challenge 
+other Adding Event Listeners 
+problem Adding Event Listeners Challenge 
+other Working With JavaScript Functions 
+problem Working With JavaScript Functions Challenge 
+Loading Events
+ Bookmark this page
+WHAT ARE THEY?
+
+JavaScript loading events.
+
+ 
+WHAT DO THEY DO?
+
+Allow you to track when content on the page has completed loading.
+
+ 
+HOW DO YOU USE THEM?
+
+By capturing the event and executing some code in response.
+
+
+
+Loading Events
+
+headings graphics
+There are a few common loading events that you should know in your JavaScript journey. These events are fired every time an HTML page is loaded and provide you with a way to track when certain elements in the page have completed loading. This is known as the "lifecycle" of an HTML page. The four main events that you will encounter are:
+
+DOMContentLoaded: The DOM content has finished loading, but external assets like images, JS files, CSS files and so on have not loaded yet.
+load: Everything is now loaded. This event fires on the window
+beforeunload: Fired just before the user leaves the page. This can allow you to confirm whether the user really wants to leave the page.
+unload: Fired when the user has confirmed they want to leave the page.
+The event you are most likely to use is the window.onload event, which allows you to execute some JavaScript code immediately after you've confirmed everything on the page is loaded. This is useful for those times when you want to automate some sort of action every single time the page loads, such as initiating a popup, populating DOM elements with content, or rendering some content that depends on something else being loaded first. In the HTML lifecycle, the document will always complete loading before the window, and you can use the onload event on both objects. To use this event, just set the onload property on the window to whatever JavaScript you would like to execute:
+
+window.onload = console.log('The window has loaded!');
+Or more practically, execute a function:
+
+function myFunction() {
+  console.log('The window has loaded!');
+  // You can do anything you want in here!
+}
+window.onload = myFunction();
+You can also attach the event to a specific element by using it as an attribute. This can allow you to determine when certain content is loaded, such as if you wanted to determine when a specific script or image has finished loading:
+
+function myFunction() {
+  console.log('This will fire when the body is loaded');
+}
+<body onload="myFunction();"></body>
+Due to event "bubbling" in JavaScript, logging these messages to the console may not always occur in the correct order and thus it's best to just use window.onload to determine when the page is completely loaded, and window.onbeforeunload and window.onunload for determining what to do when a user exits the page. You can see this phenomenon in the following runnable example, where the body's onload event bubbles up to the document, causing the document's console.log to be printed first. Regardless of this, it demonstrates the usefulness of tracking the different loading events in JavaScript:
+
+
+Runnable Example
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

@@ -1,0 +1,79 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Handling DOM Events  Mouse Movements & Scrolling
+Search in Module
+ Previous
+Next 
+other Click Events 
+problem Click Events Challenge 
+other Mouse Movements & Scrolling 
+problem Mouse Movements & Scrolling Challenge 
+other Loading Events 
+problem Loading Events Challenge 
+other Change Events 
+problem Change Events Challenge 
+other Keyboard Events 
+problem Keyboard Events Challenge 
+other Adding Event Listeners 
+problem Adding Event Listeners Challenge 
+other Working With JavaScript Functions 
+problem Working With JavaScript Functions Challenge 
+Mouse Movements & Scrolling
+ Bookmark this page
+WHAT ARE THEY?
+
+JavaScript mouse movement and scrolling events.
+
+ 
+WHAT DO THEY DO?
+
+Represent mouse movements and scrolling in a programmatic way.
+
+ 
+HOW DO YOU USE THEM?
+
+By capturing the event and executing some code in response.
+
+
+
+Mouse Movements and Scrolling
+
+headings graphics
+Another common requirement when manipulating the DOM and responding to user actions is capturing mouse movements. These movements include the mouse moving over an element (onmouseover/onmouseenter), off of an element (onmouseout/onmouseleave), scrolling (onscroll) and moving around while over an element (onmousemove). The MouseEvent object which provides this functionality has several properties which are useful when tracking the mouse, such as clientX and clientY, which return the X and Y coordinates of the mouse respectively (relative to the window).
+
+To summarize, here is a table containing the most common mouse events used when tracking mouse movements:
+
+Event/Property	Description
+EVENTS
+onmouseenter	The event occurs when the pointer is moved onto an element
+onmouseleave	The event occurs when the pointer is moved out of an element
+onmousemove	The event occurs when the pointer is moving while it is over an element
+onmouseout	The event occurs when a user moves the mouse pointer out of an element, or out of one of its children
+onmouseover	The event occurs when the pointer is moved onto an element, or onto one of its children
+onscroll	The event occurs when an element's scrollbar is being scrolled, or when scrolling with the mouse/trackpad.
+PROPERTIES
+clientX	Returns the horizontal coordinate of the mouse pointer, relative to the current window, when the mouse event was triggered
+clientY	Returns the vertical coordinate of the mouse pointer, relative to the current window, when the mouse event was triggered
+For examples of these events, see the runnable example below. Pay attention to these points as you go through this example:
+
+All the events that are used in the HTML file (onmouseenter, onmouseleave, etc) utilize the same function to handle the event: handleEvent()
+Each time that function is called in the HTML to handle one of these events, we pass it a parameter called event
+The event parameter is implicitly defined for all events, so if you're wondering where it came from or what it represents, it's built in and it represents the actual event that occurred (like a click, the mouse moving, or scrolling)
+In script.js, this event parameter is used inside handleEvent() to reference the event that triggered the function. That's how we can get the type of event that triggered it and handle all those different events with a single function!
+
+Runnable Example
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

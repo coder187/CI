@@ -1,0 +1,95 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Reading & Navigating The DOM  Getting Specific Element Properties
+Search in Module
+ Previous
+Next 
+other Getting Elements by Tag Name 
+problem Getting Elements by Tag Name Challenge 
+other Getting Elements by Class Name 
+problem Getting Elements by Class Name Challenge 
+other Getting Elements by ID 
+problem Getting Elements by ID Challenge 
+other Parents, Children & Siblings 
+problem Parents, Children & Siblings Challenge 
+other Getting Specific Element Properties 
+problem Getting Specific Element Properties Challenge 
+Getting Specific Element Properties
+ Bookmark this page
+WHAT IS IT?
+
+Getting the properties of HTML elements.
+
+ 
+WHAT DOES IT DO?
+
+Allows you to get specific properties (such as the class list, id or dimensions) of an HTML element.
+
+ 
+HOW DO YOU USE IT?
+
+Use the document object to get an element, then access the element's properties using dot notation.
+
+
+
+Getting Specific Element Properties
+
+headings graphics
+You now know how to access elements in the DOM tree in a multitude of ways, such as:
+
+Using their tag name
+Using their class or id
+Through their parents, children and siblings
+Once you've accessed the element you want, you can do almost anything you want to manipulate it.
+
+The HTML DOM Element Object is like any other object in JavaScript. It has properties and methods and can be created, read, updated and deleted. Since JavaScript is used to manipulate and modify the DOM, you should know how to access common element properties in order to change the elements in the ways you want. Some commonly used element properties are listed below:
+
+Name	Description
+tagName	A string representing the tag name of the element, such as P, DIV or H1
+id	The value of the id attribute on the element, as a string
+className	The value of the class attribute on the element, as a string
+classList	The list of classes in the class attribute as an array-like structure which can be iterated
+attributes	A NamedNodeMap of all the element's attributes and their values. It can be iterated
+clientHeight	A Number representing the inner height of the element
+clientWidth	A Number representing the inner width of the element
+innerHTML	The content inside the element including HTML markup
+outerHTML	Same as innerHTML, except it includes the element itself as well
+All of these properties can be accessed using dot notation. Many of them are mutable and thus can be used to modify the element in whatever way you wish. If the property is not mutable, you can make a copy of it, delete the element and create a new one after modifying the copy and the user will be none the wiser. A runnable example below demonstrates how you can access these properties. As always, make sure you review both the JavaScript and the HTML, and for a complete list, see the MDN Website:
+
+
+Runnable Example
+
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.
+
+
+
+let usernameInput = document.getElementById("username-input");
+let inputHtml = usernameInput.outerHTML;
+console.log(inputHtml);
+let inputPadding = usernameInput.style.padding;
+console.log(inputPadding);
+
+
+//Get Elements Properties
+let usernameInput = document.getElementById("username-input");
+let inputHtml = usernameInput.outerHTML;
+console.log(inputHtml);
+let inputPadding = window.getComputedStyle(usernameInput).padding;
+console.log(window.getComputedStyle(usernameInput).paddingLeft);
+console.log(window.getComputedStyle(usernameInput).paddingTop);
+console.log(window.getComputedStyle(usernameInput).paddingRight);
+console.log(window.getComputedStyle(usernameInput).paddingBottom);

@@ -1,0 +1,12 @@
+
+let body = documnet.body;
+let newheading = document.createElement("h3");
+newheading.innerHTML = "Shopping List";
+body.appendChild(newheading);
+let button = document.getElementsByName("button")[0]
+button.remove;
+
+document.createElement(): Create a new element
+element.appendChild(): Append an element as the child of another element
+element.cloneNode(): Clone an entire element.Pass true to "deep clone" which clones its children also
+element.remove(): Remove an element from the DOM

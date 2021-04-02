@@ -1,0 +1,84 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript-Specific Core Concepts  JavaScript Best Practices  Comments in JavaScript
+Search in Module
+ Previous
+Next 
+other Naming Variables 
+other Comments in JavaScript 
+other Indentation & Minification 
+other Using <noscript> 
+other Reserved Keywords 
+Comments in JavaScript
+ Bookmark this page
+WHAT IS IT?
+
+JavaScript comments and code documentation.
+
+ 
+WHAT DOES IT DO?
+
+Ensures your code is well documented so you and other developers can easily understand it in the future.
+
+ 
+HOW DO YOU USE IT?
+
+Comment your code whenever you write something that another developer might need a short explanation about.
+
+
+
+Comments in JavaScript
+
+headings graphics
+Clean, well documented code is easier to maintain and easier for others to read and understand. For this reason it's important that you document your code by adding comments to it whenever you write some code that might need a short explanation for someone in the future (even you) to understand it. In fact, comments are actually really important, and can even mean the difference between getting a development job or not. They also help you to debug your code when you look back at it in the future, since you can read your own comments to refresh your memory or even find those old links from Google you used to write the code in the first place - just put them right there in the comments! Think of it as doing a favor for your future self; you'll be glad you did. In JavaScript there are three ways to document your code:
+
+Single line comments
+Multi-line comments
+Docstrings
+Single line comments:
+As you learned in the comparative programming module, you can creat a single line comment in JavaScript by prepending any line with //:
+
+// This is a single line comment
+This works inline as well; anything after the // is treated as a comment:
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);  // This is an inline comment
+}
+Multi-line comments:
+For code that requires a longer explanation, you can create a multi-line comment with this format:
+
+/* This is a
+multi-line comment.
+It spans multiple
+lines */
+
+// or: 
+
+/*
+This is a
+multi-line comment.
+It spans multiple
+lines
+*/
+Docstrings
+Docstrings are special multiline comments that can take special arguments that can be interpreted by documentation generation software, so they can be used to generate the docs for large JavaScript libraries and frameworks. In a simpler context, they can be used to document what a file is for or what a class does:
+
+/** Docstring syntax
+ * begins with a forward slash
+ * and two asterisks
+ * and every subsequent line
+ * begins with a space and an
+ * asterisk.
+*/
+You won't use all of these right away, in partiular you probably won't use docstrings until your code becomes advanced enough to require them, but single and multi-line comments should be commonplace in your code so that it can easily be understood.
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

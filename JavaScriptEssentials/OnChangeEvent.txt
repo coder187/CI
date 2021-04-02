@@ -1,0 +1,73 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Handling DOM Events  Change Events
+Search in Module
+ Previous
+Next 
+other Click Events 
+problem Click Events Challenge 
+other Mouse Movements & Scrolling 
+problem Mouse Movements & Scrolling Challenge 
+other Loading Events 
+problem Loading Events Challenge 
+other Change Events 
+problem Change Events Challenge 
+other Keyboard Events 
+problem Keyboard Events Challenge 
+other Adding Event Listeners 
+problem Adding Event Listeners Challenge 
+other Working With JavaScript Functions 
+problem Working With JavaScript Functions Challenge 
+Change Events
+ Bookmark this page
+WHAT IS IT?
+
+The JavaScript onchange event.
+
+ 
+WHAT DOES IT DO?
+
+Captures when interactive elements, such as input boxes, dropdowns and checkboxes are changed.
+
+ 
+HOW DO YOU USE IT?
+
+By capturing the event and executing some code in response.
+
+
+
+Change Events
+
+headings graphics
+Knowing how to capture click events, mouse movements and loading events is great, but there are other types of events you must know in order to take advantage of everything JavaScript has to offer. Another type of event you'll need to be familiar with is the change event, which you can capture with the onchange event handler. This event is fired when certain elements change, in particular <input> and <select> elements. These events allow you to capture when a user has changed something in a form and respond accordingly, allowing you to handle powerful operations like live form validation.
+
+The onchange event handler is simple to use. Like all the other events, you can simply attach it to one of the supported elements (either an <input> or a <select> element) as an attribute, and set the attribute equal to some JavaScript code or a function you'd like to call:
+
+<input type="text" onchange="console.log('You changed the text box!');">
+If you're working with a dropdown box, the syntax is the same but the event will fire whenever the option in the box is changed by a user changing it with the mouse or the keyboard:
+
+<select name="my-select" id="my-select" onchange="console.log('You changed the select box!');">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+One key thing to recognize about the change event is that it is not fired when changing elements programmatically. It's intended to capture changes that are committed to by the user, such as typing something into a text box and then moving on to a different part of the form, so it will only be fired once the typing is complete or the select box or other input has been completely changed to the new value. This event is immensely powerful and can be used for all sorts of things to make your websites more interactive. Here is a runnable example demonstrating the above two snippets:
+
+
+Runnable Example
+
+
+
+Expand
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.

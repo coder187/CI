@@ -1,0 +1,70 @@
+Skip to main content
+Code Institute Home PageCodeInstitute: CPJS_06_20
+JavaScript Essentials
+ Dashboard for:kellyjona@gmail.com 
+Code Institute Logo
+PROGRAMME OVERVIEW
+STUDENT SUPPORT
+ GITPOD
+ SLACK
+JavaScript & the DOM  Handling DOM Events  Working With JavaScript Functions
+Search in Module
+ Previous
+Next 
+other Click Events 
+problem Click Events Challenge 
+other Mouse Movements & Scrolling 
+problem Mouse Movements & Scrolling Challenge 
+other Loading Events 
+problem Loading Events Challenge 
+other Change Events 
+problem Change Events Challenge 
+other Keyboard Events 
+problem Keyboard Events Challenge 
+other Adding Event Listeners 
+problem Adding Event Listeners Challenge 
+other Working With JavaScript Functions 
+problem Working With JavaScript Functions Challenge 
+Working With JavaScript Functions
+ Bookmark this page
+WHAT IS IT?
+
+Working with JavaScript functions.
+
+ 
+WHAT DOES IT DO?
+
+Allows you to write cleaner, easier to maintain and more efficient code.
+
+ 
+HOW DO YOU USE IT?
+
+By using functions to handle events in JavaScript.
+
+
+
+Working With JavaScript Functions
+
+headings graphics
+Throughout this module you've seen functions used for a few different things. One of the most common ways developers use functions is for handling JavaScript events, because they allow you to keep your code concise, reusable and easy to maintain. In the last unit, you saw how it's possible (and preferred) to write JavaScript functions that act as event listeners so that you can keep your JavaScript and HTML segregated and clean. With this in mind, in this unit we'll dive a little deeper into what else is available when working with these functions.
+
+When working with event handlers, a few of the things you might want to ask yourself are:
+
+Which event was or will be fired, and what caused/will cause it to be fired?
+What do I want to happen in response to this event?
+Which element or elements is the response going to affect, or if it won't change any elements, what will it do for the user?
+What information do I need to be able to handle the event correctly?
+Where can I get the information needed (from the event itself, from the element/window/document, or somewhere else)?
+To demonstrate, there are two major concepts you should understand about working with functions and event handlers in JavaScript:
+
+Concept 1: The event is accessible in the function:
+You saw in the keyboard events unit that it was possible not only to determine that the user pressed a key on the keyboard, but also whether they were holding it down, when they released it, which key they pressed, and a host of other things. All of this information came from the event object that was passed to the event handler (i.e. the function that was executed). The KeyboardEvent object has specific properties related to keyboard events and the same is true for the other types of events. You can use the event object in the function that handles the event to get more information about exactly what happened and respond accordingly.
+
+Concept 2: The element is accessible in the function:
+You also saw in the last unit that when you create an event listener using the addEventListener() method, inside of the event handler this refers to the object that you attached the listener to. This is very useful to know because it means that in the callback function that actually handles the event, you can access the event type and all its properties and methods as well as the element that triggered it, which gives you access to everything about that element: its type, height, width, behaviors, id, classes, location in the DOM and so on.
+
+Understanding these two concepts is the key to understanding how to manipulate the DOM in response to JavaScript events.
+
+ Previous
+Next 
+AboutTerms and ConditionsPrivacy PolicyPlagiarism PolicyFAQ© 2021 Code Institute.
