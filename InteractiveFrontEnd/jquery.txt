@@ -1,0 +1,468 @@
+$("p").click(function() {
+    $("p").css("color", "red");
+});
+
+$("h2").hover(function() {
+    $("h2").css("background", "lightblue");
+});
+
+
+$(".card-panel").mouseenter (function() {
+    $("body").css("background-color", "black");
+});
+
+$(".card-panel").mouseleave  (function() {
+    $("body").css("background-color", "#e1e2e2");
+});
+
+
+
+
+$("#card-panel-1").click(function(){
+    $("#card-panel-1").hide("slow");
+});
+
+$("#card-panel-2").click(function(){
+    $("#card-panel-2").hide("medium");
+});
+
+$("#card-panel-3").click(function(){
+    $("#card-panel-3").hide("fast");
+});
+
+$("#card-panel-4").click(function(){
+    $("#card-panel-4").hide(3000);
+});
+
+
+
+
+
+$("#button-card-1").click(function(){
+    $("#par-1").toggle("slow");
+});
+
+$("#button-card-2").click(function(){
+    $("#par-2").toggle("medium");
+});
+
+$("#button-card-3").click(function(){
+    $("#par-3").toggle("fast");
+});
+
+$("#button-card-4").click(function(){
+    $("#par-4").toggle();
+});
+
+
+
+
+
+$("#button-card-1").click(function(){
+    $("#par-1").slideToggle(750);
+});
+
+$("#button-card-2").click(function(){
+    $("#par-2").slideToggle(1000);
+});
+
+
+
+
+
+
+$("#button-card-1").mouseenter (function(){
+    $("#par-1").fadeTo (200,0.5);
+});
+
+$("#button-card-1").mouseleave (function(){
+    $("#par-1").fadeTo(200,1);
+});
+
+$("#button-card-2").mouseenter(function(){
+    $("#par-2").fadeTo(1000,0.5);
+});
+$("#button-card-2").mouseleave(function(){
+    $("#par-2").fadeTo(1000,1);
+});
+
+
+//THIS
+ $("p").click(function () {
+        $(this).text("Changed only the text for this paragraph");
+    });
+
+ $(".card").mouseenter (function () {
+        $(this).fadeTo(2000,0.2).fadeTo(2000,1);
+    });
+
+
+$("#button-card-3").click(function(){
+    $("#par-3").slideToggle();
+});
+
+
+
+
+
+
+
+
+   
+//    < !DOCTYPE html >
+//        <html>
+//            <head>
+//                <meta charset="utf-8">
+//                    <meta name="viewport" content="width=device-width">
+//                        <title>JQuery</title>
+//                        <link href="index.css" rel="stylesheet" type="text/css" />
+	
+//  </head>
+//                    <body>
+//                        <div id="container">
+//                            <div class="heading">
+//                                <h1>Importance of this</h1>
+//                                <nav>
+//                                    <ul>
+//                                        <li id="module1" class="module-nav">Module 1</li>
+//                                        <li id="module2" class="module-nav">Module 2</li>
+//                                        <li id="module3" class="module-nav">Module 3</li>
+//                                    </ul>
+//                                </nav>
+//                            </div>
+//                            <div id="wrapper">
+
+//                                <div class="card module1-card">
+//                                    <h2>HTML/CSS</h2>
+//                                    <p>If you have questions about your career in coding or simply want to meet the Code Institute team, then come along to our next Careers Open Evening.</p>
+//                                </div>
+
+//                                <div class="card module2-card">
+//                                    <h2>Python</h2>
+//                                    <p>If you have questions about your career in coding or simply want to meet the Code Institute team, then come along to our next Careers Open Evening.</p>
+
+//                                </div>
+
+//                                <div class="card module3-card">
+//                                    <h2>MySql</h2>
+//                                    <p>If you have questions about your career in coding or simply want to meet the Code Institute team, then come along to our next Careers Open Evening.</p>
+
+//                                </div>
+
+//                            </div>
+//                        </div>
+
+//                        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+//                        <script src="index.js"></script>
+//                    </body>
+//</html>
+
+//    body {
+//        font - family: 'Roboto', sans - serif;
+//        background - color: #e1e2e2;
+//    }
+
+//.heading {
+//        max - width: 1050px;
+//        background - color: #e1e2e2;
+//        margin: 0 auto;
+//        padding: 5px 0;
+
+//    }
+//    nav ul {
+//        display: grid;
+//        grid - template - columns: 1fr 1fr 1fr;
+//        list - style: none;
+//    }
+
+//    li {
+//        margin - left: 50px;
+//    }
+
+//    ul li: hover {
+//        cursor: pointer;
+//    }
+
+//    h2 {
+//        font - size: 1em;
+//        text - align: left;
+//    }
+
+//    p > span {
+//        color: green;
+//    }
+
+//    h1{
+//        font - size: 2.5em;
+//        text - align: center;
+//        margin: 10px 0;
+//    }
+
+//    p {
+//        font - size: .9rem;
+//    }
+
+//#wrapper {
+//        box - sizing: border - box;
+//        margin - right: auto;
+//        margin - left: auto;
+//        max - width: 1050px;
+//    }
+
+//.card {
+//        margin - top: 10px;
+//        padding: 20px;
+//        background - color: #fff;
+//    }
+
+//.card - panel {
+//        height: 30px;
+//        width: 100 %;
+//        background - color: aqua;
+//        border - radius: 5px;
+//    }
+
+//    button {
+//        box - sizing: border - box;
+//        border - radius: 4px;
+//        display: block;
+//        width: 100 %;
+//        background - color: rgba(129, 187, 201, .85);
+//        text - align: center;
+//        padding: 1em .75em;
+//        text - decoration: none;
+//        color: #fff;
+//        font - size: 1em
+//    }
+
+//.card - highlight{
+//        background - color: rgb(235, 82, 85);
+//    }
+
+//    @media screen and(min - width: 600px) {
+//	#wrapper {
+//            display: grid;
+//            grid - template - columns: 1fr 1fr 1fr;
+//            grid - column - gap: 10px;
+//        }
+//    }
+
+    $(".module-nav").on("click", function () {
+
+        let allModulesCardsSelector = ".card";
+        let thisModuleCardsSelector = "." + this.id + "-card";
+        $(allModulesCardsSelector).removeClass("card-highlight");
+        $(thisModuleCardsSelector).addClass("card-highlight");
+    });
+
+
+ $("p").click(function () {
+     
+        $(this).children("a").css("background-color","yellow");
+   
+    });
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JQuery</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+	
+  </head>
+  <body>
+	  <div id="container">
+		  <div class="heading">
+			  <h1>Traversing Sideways</h1>
+		  </div>
+		<div id="wrapper">
+
+			<div class="card module1-card">
+				
+				<h2>Code Institute</h2>
+				<div>
+					<p id="par-1">Once you join a Code Institute Bootcamp you will be taken on an accelerated contextualised learning path across 4 modules. Nothing is learned in isolation.We contextualise the content so that the knowledge and skills gained in each learning unit feeds into, and is expanded upon, within the next unit.The outputs of each module will be a project. </p>
+					
+					<button>Click</button>
+				</div>
+				
+			</div>
+
+			<div class="card module2-card">
+				<h2>Code Institute</h2>
+				<div>
+					<p id="par-2">Once you join a Code Institute Bootcamp you will be taken on an accelerated contextualised learning path across 4 modules. Nothing is learned in isolation.We contextualise the content so that the knowledge and skills gained in each learning unit feeds into, and is expanded upon, within the next unit.The outputs of each module will be a project. </p>
+					<button id="button-card-2">Click</button>
+				</div>
+		
+			</div>
+			
+	  	</div>
+	</div>
+	  
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+$('button').click(function() {
+	$(this).prev().slideDown();
+});
+
+$('h2').click(function() {
+	$(this).next().children("p").slideUp();
+});
+
+
+
+
+
+
+//    < !doctype html >
+//        <html lang="en">
+//            <head>
+//                <meta charset="utf-8" />
+//                <meta name="viewport" content="width=device-width, initial-scale=1">
+//                    <title>JQuery</title>
+//                    <link href="index.css" rel="stylesheet">
+//</head>
+//                    <body>
+//                        <div id="container">
+
+//                            <button id="reset">Reset</button>
+
+//                            <div id="card">
+//                                <p id="card-par-1" class="">I am some text in a paragraph</p>
+//                                <span class="special">I am some text in a span</span><br>
+//                                    <p class="special">I am some text in a paragraph</p>
+//                                    <p>I am some text in a paragraph</p>
+//                                    <p class="special">I am some text in a paragraph</p>
+
+//                                    <button id="card-btn-1">First paragraph</button>
+//                                    <button id="card-btn-2">Last paragraph</button>
+//		  </div>
+
+//                                <button id="filter">Filter</button>
+//                            </div>
+
+//                            <script
+//                                src="https://code.jquery.com/jquery-3.2.1.js"
+//                                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+//                                crossorigin="anonymous"></script>
+//                            <script src="index.js"></script>
+//</body>
+//</html>
+
+    $('#reset').click(function () {
+        $(this).siblings().children().removeClass('red').removeClass('yellow').removeClass('green').removeClass('large-font');
+    });
+
+    $('#card-btn-1').click(function () {
+        $(this).siblings().children().removeClass('red').removeClass('yellow').removeClass('green').removeClass('large-font');
+
+
+        $(this).parent("#card").children("p").first().addClass("red");
+
+
+
+    });
+
+
+
+    $('#card-btn-2').click(function () {
+        $(this).parent("#card").children("p").last().addClass("yellow");
+    });
+
+    $('#filter').click(function () {
+        $(this).siblings().children("p").filter(".special").addClass("green");
+    });
+
+
+    //expected solution
+
+    $('#card-btn-1').click(function () {
+        $('#card p').first().addClass('red');
+    });
+
+    $('#card-btn-2').click(function () {
+        $('#card p').last().addClass('yellow');
+    });
+
+    $('#filter').click(function () {
+        $('p').filter('.special').addClass('green');
+    });
+
+
+
+
+
+//    < !doctype html >
+//        <html lang="en">
+//            <head>
+//                <meta charset="utf-8" />
+//                <meta name="viewport" content="width=device-width, initial-scale=1">
+//                    <title>JQuery</title>
+//                    <link href="index.css" rel="stylesheet">
+//</head>
+//                    <body>
+//                        <table>
+//                            <tr>
+//                                <th></th>
+//                                <th>Country</th>
+//                                <th>Price</th>
+//                                <th>Nutrition</th>
+//                                <th>Category</th>
+//                            </tr>
+//                            <tr>
+//                                <th class='side-heading'>Spinach</th>
+//                                <td>America</td>
+//                                <td>28</td>
+//                                <td>90</td>
+//                                <td>Veg</td>
+//                            </tr>
+//                            <tr>
+//                                <th class='side-heading'>Carrots</th>
+//                                <td>France</td>
+//                                <td>56</td>
+//                                <td>75</td>
+//                                <td>Veg</td>
+//                            </tr>
+//                            <tr>
+//                                <th class='side-heading'>Broccoli</th>
+//                                <td>Bulgaria</td>
+//                                <td>12</td>
+//                                <td>70</td>
+//                                <td>Veg</td>
+//                            </tr>
+//                            <tr>
+//                                <th class='side-heading'>Orange</th>
+//                                <td>Morocco</td>
+//                                <td>15</td>
+//                                <td>50</td>
+//                                <td>Fruit</td>
+//                            </tr>
+//                            <tr>
+//                                <th class='side-heading'>Tangerine</th>
+//                                <td>Cyprus</td>
+//                                <td>12</td>
+//                                <td>25</td>
+//                                <td>Fruit</td>
+//                            </tr>
+//                        </table>
+
+//                        <script
+//                            src="https://code.jquery.com/jquery-3.2.1.js"
+//                            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+//                            crossorigin="anonymous"></script>
+//                        <script src="index.js"></script>
+//                    </body>
+//</html>
+    $(".side-heading").click(function () {
+
+        $(".side-heading").siblings().removeClass("highlight");
+        $(this).siblings().addClass("highlight");
+    });

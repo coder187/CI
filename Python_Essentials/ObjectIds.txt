@@ -1,0 +1,126 @@
+https://stackoverflow.com/questions/27460234/two-variables-with-the-same-list-have-different-ids-why-is-that?answertab=votes#tab-top
+mutable
+immutabel
+id
+object id
+Equality vs. Identity Challenge
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CPP_06_20+2020_T1/courseware/f780287e5c3f4e939cd0adb8de45c12a/e5d953898d4d499ead2a9e0538235474/
+
+message1 = str("1")
+print("set message1 = str " + message1)
+print("message1 id:" + str(id(message1)))
+
+message2 = 1
+print("set message2 = int " + str(message2))
+print("message2 id:" + str(id(message2)))
+
+message1 = str("10")
+print("message1 =" + message1)
+print("message1 id:" + str(id(message1)))
+print("message2 id:" + str(id(message2)))
+print("message2 =" + str(message2))
+
+print("**************************************")
+message1 = str("1")
+print("set message1 = str " + message1)
+print("message1 id:" + str(id(message1)))
+
+message2 = str("1")
+print("set message2 = str " + str(message2))
+print("message2 id:" + str(id(message2)))
+print ("message1 is message2: " + str((message1 is message2)))
+message1 = str("10")
+print("srt message1 = str " + message1)
+print ("message1 is message2: " + str((message1 is message2)))
+print("message1 id:" + str(id(message1)))
+print("message2 id:" + str(id(message2)))
+print("message2 =" + str(message2))
+print("message1 =" + str(message1))
+
+print ("*********************")
+print ("******MUTABLE********")
+
+list1=[1,2,3]
+print ("list1:" + str (list1))
+print ("set list2=list1")
+list2=list1
+print ("list2:" + str (list2))
+print ("list1:" + str(id(list1)))
+print ("list2:" + str(id(list2)))
+print ("list1 is list2: " + str((list1 is list2)))
+list2[1]=1000
+print ("set list2[1] = 1000")
+print ("list2[1] = " + str(list2[1]))
+print ("list2 :" + str(list2))
+print ("list2 id: " + str(id(list2)))
+print ("list1 id: " + str(id(list1)))
+print ("list1: " + str(list1))
+list1[2]=1000
+print ("set list1[2] = 1000")
+print ("list2 id: " + str(id(list2)))
+print ("list1 id: " + str(id(list1)))
+print ("append value to end of list2")
+print ("list2.append(int(4))")
+list2.append(int(4))
+print ("list1 : " + str(list1))
+print ("list2 : " + str(list2))
+
+
+list2 = ["a","b","c"]
+print ("list1 : " + str(list1))
+print ("list2 : " + str(list2))
+print ("list2 id: " + str(id(list2)))
+print ("list1 id: " + str(id(list1)))
+
+print ("because LIST is MUTABLE changing contents of one, updates the other BUT resassigning a value changes the ID so does not affect the other")
+print (list1, list2)
+print ("create new list with same contents assigns new id")
+list3 = [1, 1000, 1000, 4]
+list4=[1,2,3]
+list5=[1,2,3]
+print ("list 1 : " + str(list1) + " " +  str(id(list1)))
+print ("list 2 : " + str(list2) + " " +  str(id(list2)))
+print ("list 3 : " + str(list3) + " " +  str(id(list3)))
+print ("list 4 : " + str(list4) + " " +  str(id(list4)))
+print ("list 5 : " + str(list5) + " " +  str(id(list5)))
+
+
+
+
+print ("******IMMUTABLE********")
+tuple1=(1,2)
+tuple2=(1,2)
+tuple3=(1,)
+int1 = int(1)
+int2 = int(1)
+str1 = str("ONE HUNDRED")
+str2 = str("ONE HUNDRED")
+
+
+print ("tuple 1 : " + str(tuple1) + " " +  str(id(tuple1)))
+print ("tuple 2 : " + str(tuple2) + " " +  str(id(tuple2)))
+print ("tuple 3 : " + str(tuple3) + " " +  str(id(tuple3)))
+print ("int 1 : " + str(int1) + " " +  str(id(int1)))
+print ("int 2 : " + str(int2) + " " +  str(id(int2)))
+print ("str 1 : " + str1 + " " +  str(id(str1)))
+print ("str 2 : " + str2 + " " +  str(id(str2)))
+print ("same id as they contain the same contents")
+print ("contents are read only or immutable")
+
+tuple1=(1,2,3)
+tuple2=(1,2)
+tuple3=(1,)
+int1 = int(1)
+int2 = int(1000)
+str1 = str("ONE HUNDRED")
+str2 = str("TWO HUNDRED")
+
+
+print ("tuple 1 : " + str(tuple1) + " " +  str(id(tuple1)))
+print ("tuple 2 : " + str(tuple2) + " " +  str(id(tuple2)))
+print ("tuple 3 : " + str(tuple3) + " " +  str(id(tuple3)))
+print ("int 1 : " + str(int1) + " " +  str(id(int1)))
+print ("int 2 : " + str(int2) + " " +  str(id(int2)))
+print ("str 1 : " + str1 + " " +  str(id(str1)))
+print ("str 2 : " + str2 + " " +  str(id(str2)))
+print ("new values assigned so new ids assigned to objects")
