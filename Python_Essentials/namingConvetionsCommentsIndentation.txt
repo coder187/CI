@@ -1,0 +1,81 @@
+namiing convent
+count = 0
+first_name = Brian
+greeting = "Hello, World!"
+PI = 3.14159 #capitals for contants
+
+def divide(num, denom):
+    return num / denom
+    
+def my_country(country):
+    print(f"I am from {country}.")
+
+
+If you use a double underscore prefix (dunder) for an attribute in a method, then the attribute name will be altered, so it cannot be accessed by the regular methods. The attribute name is “mangled.”
+
+
+When naming a class, try and give it a name that gives the reader an idea of the purpose of the class. Class names should have their first character capitalised.
+
+class ComplexNumber:
+def __init__(self, realpart, imagpart):
+    self.r = realpart
+    self.i = imagpart
+
+
+
+comments
+Developers spend a lot of time writing code. So much time in fact that revisiting a piece of code that was written a couple of weeks ago may have little to no meaning to that developer, let alone any other developers that may be working on that same project. Code can get quite busy, and it can get unwieldy when people try to read it, whether it’s someone else's or if you come back to your code at a later stage. We can use code commenting, which will allow us to write human-readable explanations to our code. Comments will be ignored by the Python interpreter, meaning that we can add in as many comments as we need, without it affecting the speed or performance of our program. We can write different types of comments. We have single-line comments and multiline comments. Multiline comments can take up as many lines as you require. The comment itself is put between three opening double quotations and three closing double quotations. Generally speaking, single-line comments are used to explain individual pieces of code, whereas the multi-line comments are used to describe a function, method, class, or module. Ideally, we would use a multiline comment on every function, method, class, or module. The Python name for this is a docstring.
+
+A comment should be a complete sentence, and the first letter should be capitalised. The only exception here should be if the first word is a variable or function name so is lowercase. If the comment is about a block within a function, it should be indented by the same number of spaces as the code it is commenting. It is standard globally to write comments in English. The hash symbol # is used to tell the interpreter that this is a comment, not Python. You can write inline comments, that is comments on the same line as code but do this sparingly and only when the code meaning itself is not apparent.
+
+A docstring for a function, method or class should explain what the function, method or class does and what it returns.
+
+
+from random import randint
+
+# This is a one-line comment
+
+"""
+This is  multi-line comment.
+
+We can spread this across as many lines as we need to
+and it won't impact our computer program at all!!!
+"""
+
+def lottery_generator():
+    """
+    Appends ten random numbers to an empty list
+    Returns the list
+    """
+    numbers = [] # Empty list to hold the numbers
+    for number in range(0, 10):
+		# randint() generates random integers
+        numbers.append(randint(1, 50))
+    return numbers
+
+print(f"This weeks winning lottery numbers are {lottery_generator()}")
+
+
+
+
+The use of indentation to define a block of code makes it very clear to read. In other programming languages indentation is purely for readability, but in Python, it is vital to the correct running of the program. The PEP8 standard is four spaces for indentation level. Python 3 will error if you mix spaces and tabs.
+
+The maximum line length is 79 characters. This means that a line of code may have to be wrapped onto a continuation line. The continuation line indent cannot match the block indentation; otherwise, there will be an error. You can either add four further spaces to the continuation line indent or align with the opening delimiter on the preceding line.
+
+
+# Correct:
+
+# It is aligned with the opening delimiter, e.g. the opening parentheses.
+foo = long_function_name(var_one, var_two,
+                         var_three, var_four)
+
+# Add four spaces (an extra level of indentation) to distinguish arguments from the rest.
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
+
+# Hanging indents should add a level.
+foo = long_function_name(
+    var_one, var_two,
+    var_three, var_four)

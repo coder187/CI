@@ -1,0 +1,113 @@
+function example
+def add_numbers(nums_tuple, min_value):
+        i=0
+        for n in nums_tuple:
+            if n > min_value:
+                i=i+n
+        return i
+                
+total=add_numbers((21, 4, 7, 19, 1), 15)
+print(total)
+    
+
+
+*args and **kwargs
+
+In a function, you can list the parameters separated with commas. An elementary function is one that takes parameters a, b and adds their argument values together. This function is then reusable as you can add any two numbers together. But what if you want to add three numbers together? One possible solution is to pass in a list as an argument containing all the numbers you wish to add. This does require you though to have created the list in advance. This is inconvenient. The purpose of *args is to allow you to pass in a varied number of positional arguments. The iterable object *args can be renamed to any other name as long as it is preceded by the unpacking operator *. Rather than a list, the *args operator is a tuple so is immutable and needs to be unpacked to use the values.
+
+The **kwargs object behaves very similarly but rather than a tuple is a dictionary. Like with *args you can change the name as long as the ** unpacking operator precedes it. Where you would use **kwargs over *args is when you have a keyword or named arguments.
+
+
+
+ef addition(a, b):
+    return a + b
+
+print(addition(2,2))
+
+def add_integers(list_integers):
+	total = 0
+	for x in list_integers:
+		total += x
+	return total
+
+list_integers = [1, 2, 3, 4]
+print(add_integers(list_integers))
+
+def add_many_integers(*integers):
+	# Rename *args to something suitable
+	total = 0
+	for x in integers:
+		# As it is a tuple you can use the in keyword to iterate 
+		total += x
+	return total
+
+print(add_many_integers(1,2,3,4,5,6,7,8,9))
+
+def concatenate_words(**words):
+	result = ""
+	# As **kwargs is a dict you need to iterate over .values()
+	for arg in words.values():
+		result += arg
+		result += " "
+	return result
+
+print(concatenate_words(a='This', b="is", c="a", d="useful", e="feature"))
+
+
+
+
+
+Define the make_string function:
+Create a function named make_string, that uses * correctly with a parameter: strings
+The function should return a string of all the values supplied joined, and separated by a space.
+The function should return the correct string, no matter how many arguments are passed into the function when it is called, and it will be tested using a different number of arguments
+Call the make_string function:
+Outside the make_string function, declare a variable named my_string
+Assign the value returned from the make_string function to the my_string variable
+Call the make_string function with the following values: "Alderaan", "Coruscant", "Dagobah", "Endor", "Hoth".
+Print the value of the my_string variable to the terminal
+Remember when you pass these values into the function, the *strings converts them into a tuple, So you will be working on a tuple inside the function.
+ 
+Define the get_age function:
+Create a function named get_age, that uses ** with a parameter: data
+The function should return the value of the age key-value pair passed into the function or return the string: "no age provided" if there is no age key-value pair passed into the function.
+Call the get_age function:
+Outside the get_age function, declare a variable named pats_age
+Assign the value returned from the get_age function to the pats_age variable.
+when calling the get_age function, pass it the following key values pairs name="pat", level=4, age=33, occupation="postman".
+Print the value of the pats_age variable to the terminal
+def make_string(*strings):
+    return ' '.join(strings)
+
+my_string = make_string("Alderaan", "Coruscant", "Dagobah", "Endor", "Hoth")
+print(my_string)
+
+def get_age(**data):
+    return data.get("age", "no age provided")
+     
+pats_age = get_age(name="pat", level=4, age=33, occupation="postman")            
+print(pats_age)
+
+
+---
+
+
+
+def make_string(*strings):
+    str = ""
+    for s in strings:
+        str+= s + " "
+    return str
+my_string = make_string("Alderaan", "Coruscant", "Dagobah", "Endor", "Hoth")
+print (my_string)
+
+def get_age(**data):
+    if not "age" in data:
+        return "no age provided"
+    else:
+        return data["age"]
+    
+pats_age = get_age (name="pat", level=4, age=33, occupation="postman")
+print(pats_age)
+
+

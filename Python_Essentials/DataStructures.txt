@@ -1,0 +1,503 @@
+Lists
+A list is a collection of items or elements that are ordered and is changeable. It can contain duplicate items. Those items can be of different types such as strings, integers, floats or even another list. As a list is ordered, you can use an index to find an element in the list. Lists are zero-indexed, so the first element has index
+
+List Methods
+list.append(x)	Add an item to the end of the list.
+list.extend(list)	Extend the list by appending another list.
+list.insert(i, x)	Insert an item at a given position. The first argument is the index of the element before which to insert
+list.remove(x)	Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
+list.pop(i)	Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list.
+list.clear()	Remove all items from the list.
+list.index(x, start, end)	Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there is no such item.The optional arguments start and end are interpreted as in the slice notation.
+list.count(x)	Return the number of times x appears in the list.
+list.sort(key=None, reverse=False)	Sort the items of the list in place
+list.reverse()	Reverse the elements of the list in place.
+list.copy()	Return a copy of the list. Equivalent to a[:].
+
+crew = ["Jean-Luc", "Wesley", "Warf", "Deanna", "William", "Data", "Geordie", "Tasha"]
+print(crew)
+crew.pop()
+print(crew)
+crew.append('Beverly')
+print(crew)
+crew.extend(["Miles","Guinan"])
+print(crew)
+crew.sort(reverse=True,key=len)
+print(crew)
+
+List Slicng
+names = ["Mark", "Betty", "John", "Sally", "Bill", "Steven", "Mary", "Emily", "Adam"]
+
+# write your code here
+name = names[2]
+print(name)
+two_names = names[2:4]
+print(two_names)
+other_names = names[1:6:2]
+print(other_names)
+
+_
+all_numbers = [1, 5, 44, 22, 13, 17, 56, 3, 88, 9, 97]
+big_numbers = []
+
+for number in all_numbers:
+    if number > 40:
+        big_numbers.append(number)
+        
+print (all_numbers)
+print (big_numbers)
+
+____________________
+Tuple
+cars = "Tesla", "BMW","Ferrari"
+get_car=cars[1]
+print(get_car)
+car_one, car_two, car_three = cars
+print(car_one)
+print(car_two)
+print(car_three)
+
+-----------
+Dictionary
+
+spaceship  = {
+    "name": "Red Dwarf",
+    "Type": "Mini Vessel";,
+    "owner": "Jupiter Mining Corporation",
+    "captain": "Frank Hollister"
+}
+
+print(spaceship)
+
+print(user['age'])
+user['home'] = 'Withywindle, Middle-Earth'
+user['age'] = 99
+print(user)
+del user['home'] 
+print(user)
+print(list(user))
+print(sorted(user))
+print(user)
+print('username' in user)
+
+
+
+
+This time in the runnable example, we have created our dictionary with default values of empty strings. In this case, we have used the dict() function, which can create dictionaries from lists. The fromkeys() method is used to specify the keys list as the keys and a variable of an empty string as the values.
+
+To set a value, you can use the items key in square bracket notation and the assignment operator with a value. The default values are all overridden with the new values.
+
+To get a value, you can use the same notation without the assignment. Here we have printed the age of 100. However, if we attempted to get the value of a nonexistent key, then an error would occur. To avoid this you can use the get() method which will get the value if the key exists and return None if it does not. More methods will be covered in the next unit.
+
+
+s key 'home' returns None lets add a key:value pair. The same syntax is used as when we were setting the 'username', 'first_name', 'last_name' and 'age' values. As 'home' key is new, it is added to the dictionary with its value. As the 'age' key already exists, the value is changed from 100 to 99. If we delete a key the value is deleted with it.
+
+If we want to get a list of the keys only you can use the keys() method and wrap that in a list() function. The same syntax but using values or items will get a list of the dictionary values or items instead.
+
+
+keys = ['username', 'first_name', 'last_name', 'age']
+default_value = ''
+user = dict.fromkeys(keys, default_value)
+print(user)
+user['username'] = 'tombombadil'
+user['first_name'] = 'Tom'
+user['last_name'] = 'Bombadil'
+user['age'] = 100
+print(user)
+print(user['age'])
+print(user.get('home', "doesn't exist"))
+user['home'] = 'Withywindle, Middle-Earth'
+user['age'] = 99
+print(user)
+del user['home'] 
+print(user)
+print(list(user.keys()))
+print(list(user.values()))
+print(user)
+print(user.keys())
+
+
+
+
+The dictionary object has many methods. Some are used to create dictionaries, some to update them and some to get items from them. We used the get(keyname, None) method in the last unit as it returns None (or a specified default) instead of giving an error. If you wanted to merge two dictionaries, then the update() method could be used. However, in cases where both dictionaries have the same key, the values will be blindly overwritten. The pop() method is useful to remove a value when you know the key. To remove the last inserted item, then the popitem() method will do that. To remove all items, then the clear() method will do the job. Methods that alter the dictionary return None as default.
+
+Method	Description
+clear()	Removes all the elements from the dictionary
+copy()	Returns a copy of the dictionary
+fromkeys()	Returns a new dictionary with the specified keys and value
+get(keyname, value)	Returns the value of the specified keyname. Used in the previous unit. Returns default None if the keyname doesn't exist unless you override this default with a optional value.
+items()	Returns a list containing a tuple for each key:value pair
+keys()	Returns a list containing the dictionary's keys. Used in the previous unit.
+pop()	Removes the element with the specified key
+popitem()	Removes the last inserted key:value pair
+setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()	Updates the dictionary with the specified key:value pairs
+values()	Returns a list of all the values in the dictionary. Used in the previous unit.
+
+
+
+
+user = {
+    "username": "tombombadil",
+    "first_name": "Tom",
+    "last_name": "Bombadil",
+    "age": 100
+}
+
+print(user)
+print(user.items())
+print(user.get('age', 0))
+user.update({'home': 'Withywindle, Middle-Earth'})
+print(user)
+print(user.popitem())
+print(user)
+user.clear()
+print(user)
+
+
+___________________________________
+Set
+
+A set is another useful Python data type. It is a mathematical concept of a collection of items with no duplicates. It also uses curly brackets, but commas separate items in the collection. However, this means that to create an empty set; you have to use the method set() as {} would create an empty dictionary. You can use the in keyword to see if an item is in a set.
+
+
+A set is a useful data structure if you want to forbid duplicates in your data. Also, like a dictionary, it is very quick to check if a value is there. A use case would be to get all the unique words in a document.
+
+In the first runnable example, we have added multiple identical items to the set. However, when we print the set, the duplicates have been removed. You cannot change the items in a set, but you can add an additional single item with add() or add new multiple items as a list with update(). To remove an item use discard() rather than remove() as it will error where the item does not exist. Sets are unordered so using pop() is not recommended as you will not necessarily know which 'last item' will be removed except by the return value.
+
+Then scroll on down to learn how to use set operators to compare sets. There is a second runnable example to practise that.
+
+
+breakfast = {'bacon', 'egg', 'spam', 'spam', 'spam', 'spam', 'spam'}
+print(breakfast)
+print('egg' in breakfast)
+breakfast.add('sausage')
+print(breakfast)
+breakfast.update(['Lobster Thermidor', 'truffle pate', 'crevettes', 'shallots','aubergines'])
+print(breakfast)
+breakfast.discard('aubergines')
+print(breakfast)
+
+Set Operators
+
+Sets have mathematical operations like union, intersection, difference, and symmetric difference. 
+A union is all values that are in either set or both. 
+The intersection is the values that are in both sets. 
+The difference is the values that are in the first set but not the second. 
+The symmetric difference is all values that are in one of the sets but not both of them.
+
+In the runnable example, the syntax for these operations is displayed
+
+hello = set("Hello")
+world = set("World")
+print(f"The unique letters in hello are: {hello}")
+print(f"The letters in hello or world or both are: {hello|world}") # | is the symbol for union
+print(f"The letters in both hello and world are: {hello&world}") # & is the symbol for intersection
+print(f"The letters in hello but not world are: {hello-world}") # - is the symbol for difference
+print(f"The letters in hello and world but not both are: {hello^world}") # ^ is the symbol for symmetric difference
+
+Set Challenge
+
+Use the add() method to add the string "light bulbs" to the products_bought set
+use the update() method to add a list of three more products that have been bought ['wood', 'screws', 'saw'] to the products_bought set.
+Create a variable has_nails and assign it an expression that checks if "nails" is in the products_bought set.
+Create a variable has_paint and assign it an expression that checks if "paint" is in the products_bought set.
+Create a variable named unsold_items. Assign it an expression that finds the difference between product_list and products_bought using the difference operator. You will need to convert product_list to a set within the expression
+Print out the variable: has_nails
+Print out the variable: has_paint
+Print out the variable: unsold_items
+product_list = ['hammer', 'saw', 'nails', 'wood', 'screws', 'paint', 'brushes', 'light bulbs']
+products_bought = {'nails', 'screws', 'hammer', 'wood', 'saw', 'hammer', 'saw', 'nails', 'nails', 'screws', 'hammer'}
+
+# add your code here
+
+products_bought.add("light bulbs")
+products_bought.update(['wood', 'screws', 'saw'])
+has_nails = "nails" in products_bought
+has_paint = "paint" in products_bought
+unsold_items = set(product_list)-products_bought
+print (has_nails)
+print (has_paint)
+print (unsold_items)
+______________________________
+
+Data Structure Iteration
+In the first runnable example, we define two new variables in our for loop, key and value. These variables don’t need to be called key and value, but as the first variable will be the key and the second variable will the value, it’s considered to be a good convention. Then after that, we just print out the key and the value, with some nice formatting to denote each key/value with which we’re working.
+
+Then scroll on down to learn how to iterate over a set. There is a second runnable example to practise that.
+
+user = {
+    "username": "tombombadil",
+    "first_name": "Tom",
+    "last_name": "Bombadil",
+    "age": 100
+}
+
+for key, value in user.items():
+    print(f"Key: {key}")
+    print(f"Value: {value}")
+    print("------------------")
+
+
+
+
+
+# Create a set
+directions = set(['north', 'south', 'east', 'west'])
+
+# Print its members
+for direction in directions:
+    print(direction)
+
+# Add an item to the set:
+directions.add('northwest')
+
+print()
+# Print the members again
+# Notice the order cannot be relied upon!
+for direction in directions:
+    print(direction)
+
+
+Challenge
+Create a for loop that loops through each key and value in the data dictionary items.
+Inside the for loop, create an if statement that checks if the value is NOT equal to "student"
+Inside the if statement, use the capitalize() method to update the string values for all strings that are not "student" so that their first letter is capitalized.
+Outside the for loop, add a print statement to print the data to the console.
+Create a for loop using range() and len() that loops through the scores list
+Inside the for loop, increase each value in the scores list by 1.
+Add a print statement to print the value of scores to the console.
+
+data = {
+	"first_name": "brian",
+	"last_name": "johnson",
+	"occupation": "student"
+}
+
+scores = [6, 9, 8, 7, 8, 9]
+
+# write your code here
+
+for key,value in data.items():
+    if not value == "student":
+        data[key] = value.capitalize()
+        
+print (data)
+
+for i in range(len(scores)):
+    scores[i]+= 1    
+print(scores)
+
+
+
+
+List comprehension
+
+List comprehensions are available in Python as a concise way to create a list. It is commonly used where you want to generate a list based on an operation or to create a new sub-list of an existing list.
+
+
+Let's compare the list comprehension syntax with what you’ve seen before.
+
+numbers = []
+for x in range(10):
+    numbers.append(x)
+This same code could be written as a list comprehension.
+
+numbers = [x for x in range(10)]
+This is a more straightforward cleaner way to write the list. The list comprehension can also include additional logic. Here's a much more complex example.
+
+combination = []
+for x in [1,2,3]:
+    for y in [3,1,4]:
+        if x != y:
+            combination.append((x,y))
+This code returns [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)] which is a list of tuples.This can be done in one line:
+
+combination = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+
+
+
+
+
+
+# 1. [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print([i for i in range(10)])
+
+# 2. [0, 2, 4, 6, 8, 10]
+print([i for i in range(0,11,2)])
+
+# 3. [0, 1, 4, 9, 16, 25, 36, 49]
+print([x**2 for x in range(0,8)])
+
+# 4. [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+print([((i,(i+1))) for i in range(5)])
+
+# 5. ['woohoo', 'woohoo', 'woohoo', 'woohoo', 'woohoo', 'woohoo', 'woohoo', 'woohoo']
+print(['woohoo' for i in range(7)])
+
+# 6. ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+hw = 'hello world'
+print([i for i in hw])
+
+# 7. [('A', 'D'), ('A', 'E'), ('A', 'F'), ('B', 'D'), ('B', 'E'), ('B', 'F'), ('C', 'D'), ('C', 'E'), ('C', 'F')]
+ab = 'ABCDEF'
+print([(ab[i],ab[j]) for i in range(0,3) for j in range(3,6)
+
+
+Challenge
+Using list comprehension, add each letter from the string "Marvin" to a list and assign it to a variable named letters.
+Write a print statement to print the value of the letters list to the terminal.
+Define a variable named numbers and assign it a value of this list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Using list comprehension, extract the even numbers from the numbers list and assign it to a variable named evens.
+Write a print statement to print the value of the evens list to the terminal.
+
+letters = [i for i in "Marvin"] 
+print(letters)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evens = [i for i in numbers if i % 2 ==0]
+print (evens)
+
+
+Dict Comprehension
+squares = {}
+for x in (2, 4, 6):
+    squares[x] = x**2
+This same code could be written as a dict comprehension.
+
+squares = {x: x**2 for x in (2, 4, 6)}
+
+
+# 1. {'cherry': 6, 'mango': 5, 'apple': 5, 'banana': 6}
+fruits = ['apple', 'mango', 'banana','cherry']
+print({f:len(f) for f in fruits})
+
+# 2. {0: '', 1: '*', 2: '**', 3: '***', 4: '****'}
+print({i:(i*'*') for i in range(0,5)})
+
+# 3. {0: True, 1: False, 2: True, 3: False, 4: True, 5: False, 6: True, 7: False, 8: True, 9: False}
+print({i:(True if i%2==0 else False) for i in range(10)})
+
+# 4. {(0, 1): False, (1, 2): False, (3, 2): False, (0, 0): True, (3, 3): True, (3, 0): False, (3, 1): False,
+# (2, 1): False, (0, 2): False, (2, 0): False, (1, 3): False, (2, 3): False, (2, 2): True, (1, 0): False,
+# (0, 3): False, (1, 1): True}
+print({(i,j): (True if i==j else False) for i in range(4) for j in range(4)})
+
+
+
+
+
+# 1. {'cherry': 6, 'mango': 5, 'apple': 5, 'banana': 6}
+fruits = ['apple', 'mango', 'banana','cherry']
+print({f:len(f) for f in fruits})
+
+# 2. {0: '', 1: '*', 2: '**', 3: '***', 4: '****'}
+print({i:(i*'*') for i in range(0,5)})
+
+# 3. {0: True, 1: False, 2: True, 3: False, 4: True, 5: False, 6: True, 7: False, 8: True, 9: False}
+print({i:(True if i%2==0 else False) for i in range(10)})
+
+# 4. {(0, 1): False, (1, 2): False, (3, 2): False, (0, 0): True, (3, 3): True, (3, 0): False, (3, 1): False,
+# (2, 1): False, (0, 2): False, (2, 0): False, (1, 3): False, (2, 3): False, (2, 2): True, (1, 0): False,
+# (0, 3): False, (1, 1): True}
+print({(i,j): (True if i==j else False) for i in range(4) for j in range(4)})
+
+
+
+Challenge
+Steps
+Create a variable named cards_dict.
+Assign the value to cards_dict using dictionary comprehension. Loop through the cards list. Build your dictionary using the original list value as the dictionary key, the dictionary value should be the key converted into uppercase letters.
+Add a print statement to print the value of the cards_dict variable to the terminal
+
+cards = ['king', 'queen', 'jack', 'ace']
+
+# write your code here
+
+for c in cards:
+    print (c.upper());
+cards_dict = {c:c.upper() for c in cards}
+print (cards_dict)
+
+
+nested data structures
+
+payroll = {'emp1': {'name': 'Precious', 'job': 'Mgr', 'Wage': 50000},
+     'emp2': {'name': 'Kim', 'job': 'Dev', 'Wage': 60000},
+     'emp3': {'name': 'Sam', 'job': 'Dev', 'Wage': 70000}}
+
+print(payroll)
+
+print(payroll['emp1']['name'])
+print(payroll['emp1'].get('salary'))
+print(payroll['emp1'].get('Wage'))
+payroll['emp4'] = {'name': 'Max', 'job': 'Admin', 'Wage': 30000}
+print(payroll)
+del payroll['emp3']
+
+for id, info in payroll.items():
+    print(f'\nEmployee ID: {id}')
+    for key in info:
+
+
+
+
+
+
+Challenge
+
+
+
+Declare a variable named student_data and assign it a value of a list.
+
+
+
+The list will contain two dictionaries, one for each student. Create the two dictionaries, one after another inside the list. Remembering the syntax needed to separate the two.
+
+
+Inside the first dictionary, define your key-value pairs:
+
+
+The first key is name, and its value is the string, John Smith
+
+
+
+The second key is email, and its value is the string john@gmail.com
+
+
+
+The third key is subjects, and its value is a list of string values for Math, Psychology, Physics, Chemistry and Biology
+
+
+Inside the second dictionary, define your key-value pairs:
+
+
+The first key is name, and its value is the string, Mary Jones
+
+
+
+The second key is email, and its value is the string mary@gmail.com
+
+
+
+The third key is subjects, and its value is a list of string values for Fine Art, Music, Biology, Geography and Politics
+
+
+
+Finally, on a new line after your data has been defined, add a print statement to print your student_data to the terminal.
+student_data =[
+        {
+        "name":"John Smith",
+        "email":"john@gmail.com",
+        "subjects":
+            ["Math", "Psychology", "Physics", "Chemistry","Biology"]},
+        {
+        "name":"Mary Johns",
+        "email":"mary@gmail.com",
+        "subjects":
+            ["Fine Art", "Music", "Biology", "Geography","Politics"]
+        }
+    ]
+print (student_data)
+
+

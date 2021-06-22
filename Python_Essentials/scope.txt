@@ -1,0 +1,43 @@
+Scope when referring to variables means where within the program can that variable be accessed. The broadest scope is built-in which are the variables that come with the Python coding language. You don't need to declare or import these variables as they are available to you throughout Python. If you declare a variable in your program and it is not within any functions, then it is a global variable. A global variable is available to use anywhere in the program. However, if you declare a variable inside a function, then it is only available for use within that function. Therefore it is known as local scope. You can, of course in Python create functions inside functions, so a local scope variable in a parent function is also available in the child function. If you use the variable from the parent function in the child function, then the scope is neither local nor global. A Python variable scope that is neither local nor global is referred to as nonlocal. This is called the enclosing scope.
+
+scope
+If a variable is needed throughout the program, then declaring it at the top outside any functions will make it global. However, declaring variables as global when they are not required everywhere in a program is bad practice. Consider local scope instead.
+
+Declaring your variables inside the functions in which they will be used is good practice. However, you will run into issues with the local scope if you need to use a variable in nested functions. In Python, a variable is considered local by default.
+
+In the next unit, we will cover how to deal with these scope issues.
+
+
+
+
+can_access = False
+	
+def update_access():
+    age = int(input('Enter your age: '))
+    if age >= 18:
+        # We may think this is updating the global variable can_access, but its not as it is now considered a local variable
+        can_access = True
+        return('You are old enough enter')
+    else:
+        return('You are too young, you may not enter');
+
+update_access()
+
+----
+print(can_access) # will still print out False
+can_access = False
+
+
+def update_access():
+    global can_access
+    age = int(input('Enter your age: '))
+    if age >= 18:
+        # The global keyword is used
+        can_access = True
+        return('You are old enough to enter')
+    else:
+        return('You are too young, you may not enter');
+
+update_access()
+
+print(can_access) # will now print True if an age >= 18 is entered

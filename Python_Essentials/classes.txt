@@ -1,0 +1,153 @@
+# Write your code here
+
+class OrderItem:
+   """
+   Creates an instance of OrderItem
+   """
+   def __init__(self, item, price,quantity):
+      #properties
+       self.item = item
+       self.price = price
+       self.quantity = quantity
+
+   #behaviour
+   def description(self):
+       """
+       describe the order
+       """
+       return f"{self.quantity} x {self.item} at {self.price}" 
+       
+
+# The code below will use your class to print values to the terminal after 
+# it has been written. Comment the lines below back in to test it  
+
+order_item_one = OrderItem("bowtie", 10, 3)
+print(order_item_one.description())
+
+order_item_two = OrderItem("Fez", 25, 1)
+print(order_item_two.description())
+
+
+
+
+class User():
+    """
+    Creates an instance of User
+    """
+    def __init__(self, username, email, subscribed):
+        self.username = username
+        self.email = email
+        self.subscribed = subscribed
+    
+    def description(self):
+        """
+        Describes the instance of User
+        """
+        return f"user: {self.username}, email: {self.email}, subscribed: {self.subscribed}"
+
+
+# write your code here
+
+user_one = User("arnold","arnold@email.com",True)
+print(user_one.email)
+user_one.email = "murphy@email.com"
+print(user_one.email)
+
+##########
+
+
+
+class ContactInfo():
+    '''
+    Creates an instance of ContactInfo
+    '''
+    
+    def __init__(self,name,email):
+        self.name = name
+        self.email=email
+    about = "Contact information for customer"    
+    def description(self):
+        return f"{self.name}:{self.email}"
+print(ContactInfo.about) 
+contact = ContactInfo("dave","lister@email.com")
+print (contact.about)
+print (contact.description())
+print (contact.description)
+# print (ContactInfo.description()) #error#
+###############################################
+
+
+class Bird:
+    """
+    Bird class
+    """
+    # class attribute
+    definition = "a warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly."
+
+    def __init__(self, kind, call):
+        # instance attribute
+        self.kind = kind
+        self.call = call
+
+    def description(self):
+        """
+        describe the bird
+        """
+        parrot = "Norwegian Blue"
+        return f"A {self.kind} goes {self.call} and is {self.definition} It is not a {parrot}" 
+       
+
+owl = Bird('owl', 'Twit Twoo!')
+print(owl.description())
+
+
+
+
+class BlogPost():
+    '''
+    Creates an instance of BlogPost'''
+    
+    def __init__(self,title,content,author):
+        self.title=title
+        self.content=content
+        self.author=author
+    def get_overview(self):
+        return f"{self.title} by {self.author}"
+    def full_info(self):
+        return f"Blog post:{self.title},Content:{self.content},Author:{self.author}"
+post=BlogPost("Python Classes","Python is known as an object-oriented language...","Code Institute")
+print (post.get_overview())
+print (post.full_info())
+
+
+################################
+sub class -- inheritance
+
+class Bird:
+    """
+    Bird class
+    """
+    # class attribute
+    definition = "a warm-blooded egg-laying vertebrate animal distinguished by the possession of feathers, wings, a beak, and typically by being able to fly."
+
+    def __init__(self, kind, call):
+        # instance attribute
+        self.kind = kind
+        self.call = call
+
+    def description(self):
+        """
+        describe the bird
+        """
+        return f"A {self.kind} goes {self.call} and is {self.definition}" 
+
+
+class Parrot(Bird):
+    def __init__(self, color):
+        Bird.__init__(self, 'Parrot', 'Kah!')
+        self.color = color
+
+
+parrot = Parrot('blue')
+print(parrot.color)
+print(parrot.description())

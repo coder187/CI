@@ -1,0 +1,46 @@
+Passing functions around
+
+One thing you may have noticed in the calling functions example is that functions are passed around to other functions. This is possible in Python as a function is itself an object. A function object can be referred to in the same way as a string object. You can assign a function to a variable or even store it in a data structure. A function can be passed into another function or even to itself. In the image, the input x can be another function.
+
+functions, classes and class methods
+Below we have a list of numbers. We use the list method pop on numbers but assign it to the variable remove. By merely adding parentheses to the variable, we can use the pop method. We have passed the method to the variable. Then we create another list and a function that returns True if the integer is divisible by three. We then pass both the function and the list to a builtin function from Python called filter() which returns only the values that are True. We have converted to a list so as we can print out the list of filtered values.
+
+numbers = [4, 7, 12, 33, 13, 67]
+remove = numbers.pop
+print(remove())
+print(remove(0))
+
+integers = [1, 2, 3, 4, 5, 6]
+def is_mult_of_three(n):
+    return n % 3 == 0
+    
+print(list(filter(is_mult_of_three, integers)))
+Run this code
+
+Runnable Example
+
+
+
+
+
+
+def add_author(func):
+    """
+    Decorator to add string with author information
+    to print after decorated function runs
+    """
+    def wrapper(*args):
+        r = func(*args)
+        return f"{r}\nBy Code Institute"
+    return wrapper
+        
+# write your code here
+@add_author
+def print_article_title(title):
+    return "Article Title: " + title
+
+result = print_article_title("Python Decorators")
+print(result)
+
+
+
